@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ClickAndDrag : MonoBehaviour
 {
-    [SerializeField] bool isProps;
+    
     //Curseur
     [SerializeField] GameObject obstacleRayObject;
     //taille raycast
@@ -12,40 +12,54 @@ public class ClickAndDrag : MonoBehaviour
     //layer Mask Props
     [SerializeField] LayerMask layerMask;
 
+    RaycastHit2D isHitRay;
+
+    [SerializeField] bool isProps;
+    [SerializeField] GameObject hittedProps;
+    Vector2 ref_velocity = Vector2.zero;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         //Création RayCastHit avec position curseur + direction + taille + layerMask qu'il doit reconnaître
-        RaycastHit2D hitProps = Physics2D.Raycast(obstacleRayObject.transform.position, Vector2.right * 5, obstacleRayDistance, layerMask);
+        isHitRay = Physics2D.Raycast(obstacleRayObject.transform.position, Vector2.right * 5, obstacleRayDistance, layerMask);
+        
 
         //Si Curseur sur props
-        if (hitProps.collider != null)
+        if (isHitRay.collider)
         {            
             //Affichage Raycast
-            Debug.DrawRay(obstacleRayObject.transform.position, Vector2.right * hitProps.distance, Color.green);
+            //Debug.DrawRay(obstacleRayObject.transform.position, Vector2.right * isHitRay.distance, Color.green);
             isProps = true;
         }
         else
         {
             isProps = false;
         }
-    }
 
-    private void FixedUpdate()
-    {
+        Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         if (isProps)
         {
 
             if (Input.GetMouseButtonDown(0))
             {
-                Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                Debug.Log(mousePosition + "UwU");
+                hittedProps = isHitRay.transform.gameObject;         
+            }
+            if (hittedProps)
+            {
+                hittedProps.transform.position = Vector2.SmoothDamp(hittedProps.transform.position, mousePosition, ref ref_velocity, 0f);
+            }
+            
+            
+            if (Input.GetMouseButtonUp(0) && hittedProps)
+            {
+                hittedProps = null;
             }
         }
     }

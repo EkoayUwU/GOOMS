@@ -16,6 +16,7 @@ public class ClickAndDrag : MonoBehaviour
 
     [SerializeField] bool isProps;
     [SerializeField] GameObject hittedProps;
+    Rigidbody2D rb_hittedProps;
     Vector2 ref_velocity = Vector2.zero;
 
     // Start is called before the first frame update
@@ -44,24 +45,24 @@ public class ClickAndDrag : MonoBehaviour
         }
 
         Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        if (isProps)
-        {
 
-            if (Input.GetMouseButtonDown(0))
-            {
-                hittedProps = isHitRay.transform.gameObject;         
-            }
-            if (hittedProps)
-            {
-                hittedProps.transform.position = Vector2.SmoothDamp(hittedProps.transform.position, mousePosition, ref ref_velocity, 0f);
-            }
-            
-            
-            if (Input.GetMouseButtonUp(0) && hittedProps)
-            {
-                hittedProps = null;
-            }
+        if (Input.GetMouseButtonDown(0) && isProps)
+        {
+            hittedProps = isHitRay.transform.gameObject; 
+            rb_hittedProps= hittedProps.GetComponent<Rigidbody2D>();
         }
+        if (hittedProps)
+        {
+            hittedProps.transform.position = Vector2.SmoothDamp(hittedProps.transform.position, mousePosition, ref ref_velocity, 0f);
+            rb_hittedProps.gravityScale = 0f;
+        }
+            
+            
+        if (Input.GetMouseButtonUp(0) && hittedProps)
+        {
+            rb_hittedProps.gravityScale = 1f;
+            hittedProps = null;
+        }       
     }
 
 }

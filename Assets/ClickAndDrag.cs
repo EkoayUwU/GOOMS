@@ -15,8 +15,8 @@ public class ClickAndDrag : MonoBehaviour
     RaycastHit2D isHitRay;
 
     [SerializeField] bool isProps;
-    [SerializeField] GameObject hittedProps;
-    Rigidbody2D rb_hittedProps;
+    Vector2 mousePosition;
+    Rigidbody2D hittedProps;
     Vector2 ref_velocity = Vector2.zero;
 
     // Start is called before the first frame update
@@ -44,25 +44,31 @@ public class ClickAndDrag : MonoBehaviour
             isProps = false;
         }
 
-        Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
         if (Input.GetMouseButtonDown(0) && isProps)
         {
-            hittedProps = isHitRay.transform.gameObject; 
-            rb_hittedProps= hittedProps.GetComponent<Rigidbody2D>();
+            hittedProps = isHitRay.transform.gameObject.GetComponent<Rigidbody2D>(); 
+            hittedProps= hittedProps.GetComponent<Rigidbody2D>();
+
+            hittedProps.velocity = Vector2.zero;
         }
-        if (hittedProps)
-        {
-            hittedProps.transform.position = Vector2.SmoothDamp(hittedProps.transform.position, mousePosition, ref ref_velocity, 0f);
-            rb_hittedProps.gravityScale = 0f;
-        }
-            
-            
+
+                        
         if (Input.GetMouseButtonUp(0) && hittedProps)
         {
-            rb_hittedProps.gravityScale = 1f;
+
             hittedProps = null;
         }       
+    }
+
+    private void FixedUpdate()
+    {
+        if (hittedProps)
+        {
+            hittedProps.MovePosition(Vector2.SmoothDamp(hittedProps.transform.position, mousePosition, ref ref_velocity, 0f));
+            
+        }
     }
 
 }

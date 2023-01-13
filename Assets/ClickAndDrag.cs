@@ -4,49 +4,32 @@ using UnityEngine;
 
 public class ClickAndDrag : MonoBehaviour
 {
-    Rigidbody2D rb;
-    public GameObject selectedObject;
+    //Curseur
+    [SerializeField] GameObject obstacleRayObject;
+    //taille raycast
+    [SerializeField] float obstacleRayDistance;
+    //layer Mask Props
+    [SerializeField] LayerMask layerMask;
+
     // Start is called before the first frame update
     void Start()
     {
-        //rb = GetComponent<Rigidbody2D>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        //if (Input.GetMouseButtonDown(0))
-        //{
-        //    //Récup position souris en convertissant pos caméra en pos World
-        //    Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        //    Debug.Log(mousePosition);
-        //}
-        //Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        //if (Input.GetMouseButtonDown(0))
-        //{
-        //    Collider2D targetObject = Physics2D.OverlapPoint(mousePosition);
+        //Création RayCastHit avec position curseur + direction + taille + layerMask qu'il doit reconnaître
+        RaycastHit2D hitProps = Physics2D.Raycast(obstacleRayObject.transform.position, Vector2.right * 5, obstacleRayDistance, layerMask);
 
-        //    if (targetObject && targetObject.tag == "props")
-        //    {
-        //        selectedObject = targetObject.transform.gameObject;
-        //    }
-
-        //}
-        // Creates a Ray from the mouse position
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        Debug.Log(ray);
-        RaycastHit hitData;
-        Debug.DrawRay(ray.origin, ray.direction * 10);
-        if (Physics.Raycast(ray, out hitData))
+        //Si Curseur sur props
+        if (hitProps.collider != null)
         {
-            // The Ray hit something!
+            Debug.Log("props reconnu");
+            //Affichage Raycast
+            Debug.DrawRay(obstacleRayObject.transform.position, Vector2.right * hitProps.distance, Color.green);           
         }
-
-
-
-
-
-
     }
 
 }

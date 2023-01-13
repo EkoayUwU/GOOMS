@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ClickAndDrag : MonoBehaviour
 {
+    [SerializeField] bool isProps;
     //Curseur
     [SerializeField] GameObject obstacleRayObject;
     //taille raycast
@@ -25,10 +26,27 @@ public class ClickAndDrag : MonoBehaviour
 
         //Si Curseur sur props
         if (hitProps.collider != null)
-        {
-            Debug.Log("props reconnu");
+        {            
             //Affichage Raycast
-            Debug.DrawRay(obstacleRayObject.transform.position, Vector2.right * hitProps.distance, Color.green);           
+            Debug.DrawRay(obstacleRayObject.transform.position, Vector2.right * hitProps.distance, Color.green);
+            isProps = true;
+        }
+        else
+        {
+            isProps = false;
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        if (isProps)
+        {
+
+            if (Input.GetMouseButtonDown(0))
+            {
+                Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                Debug.Log(mousePosition + "UwU");
+            }
         }
     }
 

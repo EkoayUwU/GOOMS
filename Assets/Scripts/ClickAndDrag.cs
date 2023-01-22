@@ -20,6 +20,7 @@ public class ClickAndDrag : MonoBehaviour
 
     private Rigidbody2D hittedProps;
     GameObject hittedObject;
+    TargetJoint2D TJ_hittedObject;
 
 
 
@@ -44,10 +45,13 @@ public class ClickAndDrag : MonoBehaviour
             {
                 hittedProps = isHitRay.transform.gameObject.GetComponent<Rigidbody2D>();
                 hittedObject = isHitRay.transform.gameObject;
-                //hittedProps.velocity = Vector2.zero;
+                hittedProps.velocity = Vector2.zero;
                 hittedProps.gravityScale = 0f;
                 hittedProps.constraints = RigidbodyConstraints2D.None;
-                isHitRay.transform.SetParent(transform);
+                TJ_hittedObject = hittedObject.GetComponent<TargetJoint2D>();
+                TJ_hittedObject.enabled = true;
+                
+                
             }
         }
 
@@ -55,8 +59,7 @@ public class ClickAndDrag : MonoBehaviour
         //Freeze le props avec RMB 
         if (Input.GetMouseButtonDown(1) && hittedObject)
         {
-            hittedProps.constraints = RigidbodyConstraints2D.FreezeAll;
-            hittedObject.transform.SetParent(null);
+            hittedProps.constraints = RigidbodyConstraints2D.FreezeAll;         
             hittedObject = null;
         }
 
@@ -64,9 +67,10 @@ public class ClickAndDrag : MonoBehaviour
         if (Input.GetMouseButtonUp(0) && hittedObject)
         {
             hittedProps.gravityScale = 1f;
-            hittedProps = null;
-            hittedObject.transform.SetParent(null);
+            hittedProps = null;    
+            TJ_hittedObject.enabled = false;
             hittedObject = null;
+
         }
     }
 
@@ -77,6 +81,7 @@ public class ClickAndDrag : MonoBehaviour
         if (hittedProps)
         {
             //hittedProps.MovePosition(Vector2.SmoothDamp(hittedProps.transform.position, mousePosition, ref ref_velocity, 0f));
+            TJ_hittedObject.anchor = hittedProps.transform.localPosition;            
         }
     }
 }

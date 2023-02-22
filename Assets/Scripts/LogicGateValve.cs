@@ -13,13 +13,6 @@ public class LogicGateValve : MonoBehaviour
 
     private bool isOpen = false;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         lightRef1.color = logicGates[0] ? Color.yellow : Color.black;
@@ -58,6 +51,8 @@ public class LogicGateValve : MonoBehaviour
         if (ValveInfo == "Valve 1") Valve1();
         if (ValveInfo == "Valve 2") Valve2();
         if (ValveInfo == "Valve 3") Valve3();
+
+        
         Debug.Log(ValveInfo);
     }
 

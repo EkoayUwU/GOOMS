@@ -20,6 +20,8 @@ public class ClickAndDrag : MonoBehaviour
 
     private Rigidbody2D hittedProps;
     GameObject hittedObject;
+
+   
     
 
 
@@ -45,11 +47,9 @@ public class ClickAndDrag : MonoBehaviour
             {
                 hittedProps = isHitRay.transform.gameObject.GetComponent<Rigidbody2D>();
                 hittedObject = isHitRay.transform.gameObject;
-                hittedProps.velocity = Vector2.zero;
                 hittedProps.gravityScale = 0f;
                 hittedProps.constraints = RigidbodyConstraints2D.None;
-                
-                
+                hittedProps.angularDrag = 2.5f;
                 
             }
         }
@@ -77,10 +77,6 @@ public class ClickAndDrag : MonoBehaviour
     private void FixedUpdate()
     {
         //D�placement props
-        if (hittedProps)
-        {
-            hittedProps.MovePosition(Vector2.SmoothDamp(hittedProps.transform.position, mousePosition, ref ref_velocity, 0f));
-
-        }
+        if(hittedProps) hittedProps.MovePosition(Vector2.SmoothDamp(hittedProps.transform.position, mousePosition, ref ref_velocity, 0f));
     }
 }

@@ -20,7 +20,7 @@ public class ClickAndDrag : MonoBehaviour
 
     private Rigidbody2D hittedProps;
     GameObject hittedObject;
-    TargetJoint2D TJ_hittedObject;
+    
 
 
 
@@ -31,13 +31,13 @@ public class ClickAndDrag : MonoBehaviour
 
     void Update()
     {
-        //Création RayCastHit avec position curseur + direction + taille + layerMask qu'il doit reconnaître
+        //Crï¿½ation RayCastHit avec position curseur + direction + taille + layerMask qu'il doit reconnaï¿½tre
         //RaycastHit2D isHitRay = Physics2D.Raycast(obstacleRayObject.transform.position, Vector2.right * 5, obstacleRayDistance, layerMask);
 
         mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         RaycastHit2D isHitRay;
 
-        //Unfreeze props + retirer velocité/gravité pdnt drag + création parent pour rotation props 
+        //Unfreeze props + retirer velocitï¿½/gravitï¿½ pdnt drag + crï¿½ation parent pour rotation props 
         if (Input.GetMouseButtonDown(0))
         {
             isHitRay = Physics2D.Raycast(obstacleRayObject.transform.position, Vector2.right * 5, obstacleRayDistance, layerMask);
@@ -48,8 +48,7 @@ public class ClickAndDrag : MonoBehaviour
                 hittedProps.velocity = Vector2.zero;
                 hittedProps.gravityScale = 0f;
                 hittedProps.constraints = RigidbodyConstraints2D.None;
-                TJ_hittedObject = hittedObject.GetComponent<TargetJoint2D>();
-                TJ_hittedObject.enabled = true;
+                
                 
                 
             }
@@ -63,12 +62,12 @@ public class ClickAndDrag : MonoBehaviour
             hittedObject = null;
         }
 
-        //clear la variable qui stock le props séléctioné lors du relachement de LMB
+        //clear la variable qui stock le props sï¿½lï¿½ctionï¿½ lors du relachement de LMB
         if (Input.GetMouseButtonUp(0) && hittedObject)
         {
             hittedProps.gravityScale = 1f;
             hittedProps = null;    
-            TJ_hittedObject.enabled = false;
+            
             hittedObject = null;
 
         }
@@ -77,11 +76,11 @@ public class ClickAndDrag : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //Déplacement props
+        //Dï¿½placement props
         if (hittedProps)
         {
-            //hittedProps.MovePosition(Vector2.SmoothDamp(hittedProps.transform.position, mousePosition, ref ref_velocity, 0f));
-            TJ_hittedObject.anchor = hittedProps.transform.localPosition;            
+            hittedProps.MovePosition(Vector2.SmoothDamp(hittedProps.transform.position, mousePosition, ref ref_velocity, 0f));
+
         }
     }
 }

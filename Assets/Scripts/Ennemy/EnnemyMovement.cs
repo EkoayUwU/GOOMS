@@ -37,8 +37,9 @@ public class EnnemyMovement : MonoBehaviour
     void Update()
     {
         
-        if (visionDetector.inVisionCone() && waypoints[0].transform.position.x < transform.position.x && transform.position.x < waypoints[1].transform.position.x )
+        if (visionDetector.inVisionCone() /*&& waypoints[0].transform.position.x < transform.position.x && transform.position.x < waypoints[1].transform.position.x */)
         {
+            movementSpeed = 800f;
             target = playerRef.transform;
             directionTarget = target.position - gameObject.transform.position;
             direction = directionTarget.x > 0 ? 1 : -1;
@@ -47,6 +48,7 @@ public class EnnemyMovement : MonoBehaviour
 
         if (!visionDetector.inVisionCone())
         {
+            movementSpeed = 400f;
             target = waypoints[indexWaypoints % waypoints.Length];
             directionTarget = target.position - gameObject.transform.position;
             direction = directionTarget.x > 0 ? 1 : -1;
@@ -55,23 +57,26 @@ public class EnnemyMovement : MonoBehaviour
             if (Vector2.Distance(transform.position, target.position) < 1.0f)
             {
                 indexWaypoints++;
-                rb.velocity = direction == 1 ? new Vector2(2f, 0) : new Vector2(-2f, 0);
-                transform.localScale = direction == 1 ? new Vector3(-1f, 1f, 1f) : new Vector3(1f, 1f, 1f);
+                rb.velocity = direction == 1 ? new Vector2(2f, 0) : new Vector2(-2f, 0);            
                 target = waypoints[indexWaypoints % waypoints.Length];
             }
         }
-        
 
-        
+        transform.localScale = target.position.x > transform.position.x ? new Vector3(1f, 1f, 1f) : new Vector3(-1f, 1f, 1f);
 
-        
+
+
+
+
+
+
     }
 
     private void FixedUpdate()
     {
         if (visionDetector.inVisionCone() && Vector2.Distance(transform.position, target.position) > 0)
         {
-            target_velocity = new Vector2((Vector2.Distance(transform.position, target.position) * direction * movementSpeed * Time.deltaTime) / 4, rb.velocity.y);
+            target_velocity = new Vector2(/*(Vector2.Distance(transform.position, target.position) * */direction * movementSpeed * Time.deltaTime, rb.velocity.y);
             rb.velocity = Vector2.SmoothDamp(rb.velocity, target_velocity, ref ref_velocity, 0.5f);
         }
 

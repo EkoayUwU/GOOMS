@@ -5,9 +5,9 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     Rigidbody2D rb;
-    float moveSpeedHorizontal = 400f;
+    float moveSpeedHorizontal = 450f;
     float horizontalValue;
-    float jumpForce = 7f;
+    float jumpForce = 8.5f;
     [SerializeField] bool isJumping = false;
     [SerializeField] bool canJump = false;
 
@@ -35,6 +35,11 @@ public class PlayerMovement : MonoBehaviour
             isJumping = false;
             rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
             canJump = false;
+
+            if (!canJump)
+            {
+                StartCoroutine(FallTime());
+            }
         }
         rb.velocity = new Vector2(horizontalValue*moveSpeedHorizontal*Time.fixedDeltaTime, rb.velocity.y);
     }
@@ -43,9 +48,20 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.tag == "Floor")
         {
+            rb.gravityScale = 1;
             canJump = true;
         }
         
        
+    }
+
+    IEnumerator FallTime()
+    {
+        if (canJump == false)
+        {
+            yield return new WaitForSeconds(0.3f);
+            rb.gravityScale = 2.5f;
+            Debug.Log("OUII");
+        }
     }
 }

@@ -26,7 +26,8 @@ public class PlayerHealth : MonoBehaviour
     {
         if(healthPoint <= 0)
         {
-            rb.constraints = RigidbodyConstraints2D.FreezeAll;
+            rb.constraints = RigidbodyConstraints2D.FreezePositionX;
+            
             movementScript.enabled = false;
             boxCollider.enabled = false;
             capCollider.enabled = false;

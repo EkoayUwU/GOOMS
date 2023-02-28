@@ -58,7 +58,6 @@ public class EnnemyMovement : MonoBehaviour
                 rb.velocity = direction == 1 ? new Vector2(2f, 0) : new Vector2(-2f, 0);
                 transform.localScale = direction == 1 ? new Vector3(-1f, 1f, 1f) : new Vector3(1f, 1f, 1f);
                 target = waypoints[indexWaypoints % waypoints.Length];
-                Debug.Log(target);
             }
         }
         
@@ -73,7 +72,6 @@ public class EnnemyMovement : MonoBehaviour
         if (visionDetector.inVisionCone() && Vector2.Distance(transform.position, target.position) > 0)
         {
             target_velocity = new Vector2((Vector2.Distance(transform.position, target.position) * direction * movementSpeed * Time.deltaTime) / 4, rb.velocity.y);
-            Debug.Log(target_velocity);
             rb.velocity = Vector2.SmoothDamp(rb.velocity, target_velocity, ref ref_velocity, 0.5f);
         }
 

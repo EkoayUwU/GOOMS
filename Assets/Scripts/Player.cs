@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
     Rigidbody2D rb;
     float moveSpeedHorizontal = 400f;
     float horizontalValue;
-    float jumpForce = 10f;
+    float jumpForce = 7f;
     [SerializeField] bool isJumping = false;
     [SerializeField] bool canJump = false;
 
@@ -30,7 +30,7 @@ public class Player : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if (isJumping)
+        if (isJumping && canJump)
         {
             isJumping = false;
             rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
@@ -41,7 +41,11 @@ public class Player : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        canJump = true;
-        //Debug.Log(collision.gameObject.tag);
+        if (collision.tag == "Floor")
+        {
+            canJump = true;
+        }
+        
+       
     }
 }

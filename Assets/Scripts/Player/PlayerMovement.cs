@@ -61,7 +61,7 @@ public class PlayerMovement : MonoBehaviour
         {
             yield return new WaitForSeconds(0.3f);
             rb.gravityScale = 2.5f;
-            Debug.Log("OUII");
+            
         }
     }
 }

@@ -12,10 +12,6 @@ public class ValveSystem : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.H))
-        {
-            LogicGateValve.Set(gameObject.name);
-        }
 
         if (isWaiting && isWaiting2)
         {
@@ -27,11 +23,6 @@ public class ValveSystem : MonoBehaviour
     }
         
             
-        
-    
-
-    
-
     private void OnMouseOver()
     {
         if (Input.GetMouseButton(0))
@@ -43,7 +34,6 @@ public class ValveSystem : MonoBehaviour
             }
             
         }
-            Debug.Log("UwU");
     }
 
     IEnumerator TimerVavle()

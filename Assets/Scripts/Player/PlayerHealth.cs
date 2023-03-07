@@ -10,6 +10,7 @@ public class PlayerHealth : MonoBehaviour
     private CapsuleCollider2D capCollider;
 
     private int healthPoint;
+    private bool isGrounded = false;
 
     void Start()
     {
@@ -26,11 +27,14 @@ public class PlayerHealth : MonoBehaviour
     {
         if(healthPoint <= 0)
         {
-            rb.constraints = RigidbodyConstraints2D.FreezePositionX;
-            
             movementScript.enabled = false;
-            boxCollider.enabled = false;
-            capCollider.enabled = false;
+            if (isGrounded)
+            {
+                rb.bodyType = RigidbodyType2D.Static;
+                rb.constraints = RigidbodyConstraints2D.FreezePositionX;
+                rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+            }
+            
 
             /*  Lancement Animation + Ecran Mort
                 Juuuuuuuuste ici
@@ -38,11 +42,22 @@ public class PlayerHealth : MonoBehaviour
             */
 
         }
-
-        if(Input.GetKeyDown(KeyCode.H))
+        if (Input.GetKeyDown(KeyCode.H)) 
         {
             Damage(1);
         }
+
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if ( collision.tag == "Floor")
+        {
+            isGrounded = true;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        isGrounded = false;
     }
 
     public void SetHealth(int health)

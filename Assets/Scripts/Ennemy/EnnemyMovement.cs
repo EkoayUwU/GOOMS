@@ -39,6 +39,10 @@ public class EnnemyMovement : MonoBehaviour
     
     void Update()
     {
+        if (zoneRef.Get() == false)
+        {
+            aggroTaken = false;
+        }
         bool CheckGauche()
         {
             return (((transform.position.x >= playerRef.transform.position.x) && (transform.localScale.x == -1) && (zoneRef.Get()))) ? true : false;
@@ -52,7 +56,7 @@ public class EnnemyMovement : MonoBehaviour
             return ((CheckGauche() || CheckDroite()) && !platformRef.Get()) ? true : false;
         }
 
-
+        
         if (Aggro())
         {
             aggroTaken = true;
@@ -80,12 +84,10 @@ public class EnnemyMovement : MonoBehaviour
             SwapSens();
         }
 
-        Debug.Log("aggroTaken " + aggroTaken + " ;zoneRef.Get() " + zoneRef.Get() + " ;!Aggro() " + !Aggro());
 
         if (aggroTaken && zoneRef.Get() && !Aggro())
         {           
             target = playerRef.transform;
-            indexWaypoints++;
             SwapSens();
             aggroTaken = false;
         }

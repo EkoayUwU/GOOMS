@@ -46,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.tag == "Floor")
+        if (collision.tag == "Floor" || collision.tag == "Platform")
         {
             rb.gravityScale = 1;
             canJump = true;

@@ -45,16 +45,14 @@ public class LogicGateValve : MonoBehaviour
     //Valve 2
     private void Valve2()
     {
-        logicGates[1] = !logicGates[1];
-        logicGates[2] = !logicGates[2];
         logicGates[3] = !logicGates[3];
+        logicGates[4] = !logicGates[4];
     }
 
     //Valve 3
     private void Valve3()
-    {
-        logicGates[3] = !logicGates[3];
-        logicGates[4] = !logicGates[4];
+    {       
+        logicGates[2] = !logicGates[2];
     }
 
     //Set

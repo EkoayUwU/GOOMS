@@ -8,6 +8,7 @@ public class PlayerHealth : MonoBehaviour
     private PlayerMovement movementScript;
     private BoxCollider2D boxCollider;
     private CapsuleCollider2D capCollider;
+    private SpriteRenderer sr;
 
     private int healthPoint;
     private bool isGrounded = false;
@@ -17,6 +18,7 @@ public class PlayerHealth : MonoBehaviour
         healthPoint = 1;
         rb = GetComponent<Rigidbody2D>();
         movementScript = GetComponent<PlayerMovement>();
+        sr = GetComponent<SpriteRenderer>();
 
         boxCollider = rb.GetComponent<BoxCollider2D>();
         capCollider = rb.GetComponent<CapsuleCollider2D>();
@@ -25,11 +27,14 @@ public class PlayerHealth : MonoBehaviour
     
     void Update()
     {
+        
         if(healthPoint <= 0)
         {
             movementScript.enabled = false;
+            sr.color = new Color(255f, 0f, 0f);
+
             if (isGrounded)
-            {
+            {                
                 rb.bodyType = RigidbodyType2D.Static;
                 rb.constraints = RigidbodyConstraints2D.FreezePositionX;
                 rb.constraints = RigidbodyConstraints2D.FreezeRotation;
@@ -50,9 +55,10 @@ public class PlayerHealth : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if ( collision.tag == "Floor")
+        if ( collision.tag == "Floor" || collision.tag == "Platform")
         {
             isGrounded = true;
+
         }
     }
     private void OnTriggerExit2D(Collider2D collision)

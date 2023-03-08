@@ -12,7 +12,6 @@ public class EnnemyMovement : MonoBehaviour
     [SerializeField] MovingPlatform platformRef;
 
     Rigidbody2D rb;
-    SpriteRenderer sr;
 
     [SerializeField] Transform[] waypoints;
     private int indexWaypoints = 0;
@@ -33,7 +32,6 @@ public class EnnemyMovement : MonoBehaviour
         target = waypoints[0];
 
         rb = GetComponent<Rigidbody2D>();
-        sr = GetComponent<SpriteRenderer>();
     }
 
     

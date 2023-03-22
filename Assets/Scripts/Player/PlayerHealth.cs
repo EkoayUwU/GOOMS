@@ -32,13 +32,8 @@ public class PlayerHealth : MonoBehaviour
         {
             movementScript.enabled = false;
             sr.color = new Color(255f, 0f, 0f);
-
-            if (isGrounded)
-            {                
-                rb.bodyType = RigidbodyType2D.Static;
-                rb.constraints = RigidbodyConstraints2D.FreezePositionX;
-                rb.constraints = RigidbodyConstraints2D.FreezeRotation;
-            }
+            capCollider.enabled = false;
+            gameObject.layer = 7;
             
 
             /*  Lancement Animation + Ecran Mort

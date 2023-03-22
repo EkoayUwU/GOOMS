@@ -22,14 +22,7 @@ public class ClickAndDrag : MonoBehaviour
     GameObject hittedObject;
 
    
-    
-
-
-
-    void Start()
-    {
-
-    }
+ 
 
     void Update()
     {
@@ -43,10 +36,13 @@ public class ClickAndDrag : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             isHitRay = Physics2D.Raycast(obstacleRayObject.transform.position, Vector2.right * 5, obstacleRayDistance, layerMask);
-            if (isHitRay)
+            if (isHitRay && isHitRay.transform.tag == "staticProps")
             {
+                
                 hittedProps = isHitRay.transform.gameObject.GetComponent<Rigidbody2D>();
                 hittedObject = isHitRay.transform.gameObject;
+                hittedObject.tag = "mouvingProps";
+                hittedObject.layer = 11;
                 hittedProps.gravityScale = 0f;
                 hittedProps.constraints = RigidbodyConstraints2D.None;
                 hittedProps.angularDrag = 2.5f;
@@ -58,7 +54,9 @@ public class ClickAndDrag : MonoBehaviour
         //Freeze le props avec RMB 
         if (Input.GetMouseButtonDown(1) && hittedObject)
         {
-            hittedProps.constraints = RigidbodyConstraints2D.FreezeAll;         
+            hittedProps.constraints = RigidbodyConstraints2D.FreezeAll;
+            hittedObject.tag = "staticProps";
+            hittedObject.layer = 10;
             hittedObject = null;
         }
 
@@ -66,6 +64,8 @@ public class ClickAndDrag : MonoBehaviour
         if (Input.GetMouseButtonUp(0) && hittedObject)
         {
             hittedProps.gravityScale = 1f;
+            hittedObject.tag = "staticProps";
+            hittedObject.layer = 10;
             hittedProps = null;    
             
             hittedObject = null;

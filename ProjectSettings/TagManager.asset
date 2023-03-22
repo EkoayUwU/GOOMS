@@ -4,10 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - props
   - Ennemy
   - Floor
   - Platform
+  - staticProps
+  - mouvingProps
   layers:
   - Default
   - TransparentFX
@@ -15,12 +16,12 @@ TagManager:
   - 
   - Water
   - UI
-  - Props
   - 
+  - Ennemy
+  - Player
   - 
-  - 
-  - 
-  - 
+  - Static Props
+  - Mouving Props
   - 
   - 
   - 

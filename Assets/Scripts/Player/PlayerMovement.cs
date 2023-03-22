@@ -46,13 +46,16 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.tag == "Floor" || collision.tag == "Platform")
+        if (collision.tag == "Floor" || collision.tag == "Platform" || collision.tag == "staticProps")
         {
             rb.gravityScale = 1;
             canJump = true;
-        }
-        
+        }   
        
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        canJump = false;
     }
 
     IEnumerator FallTime()

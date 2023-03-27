@@ -5,8 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField] GameObject PlayerSpawn;
-
     private Rigidbody2D rb;
     private PlayerMovement movementScript;
     private BoxCollider2D boxCollider;
@@ -41,12 +39,11 @@ public class PlayerHealth : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.Return))
             {
                 //healthPoint = 1;
-                transform.position = PlayerSpawn.transform.position;
+                
                 //movementScript.enabled = true;
                 //sr.color = new Color(255f, 255f, 255f);
                 //capCollider.enabled = true;
                 //gameObject.layer = 8;
-                SceneManager.LoadScene("SceneSandboxTest");
             }
             /*  Lancement Animation + Ecran Mort
                 Juuuuuuuuste ici

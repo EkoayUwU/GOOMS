@@ -13,6 +13,7 @@ public class MousePos : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Récupère les pos de la souris
         Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         transform.position = mousePosition;
     }

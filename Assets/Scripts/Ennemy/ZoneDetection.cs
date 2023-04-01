@@ -5,11 +5,10 @@ using UnityEngine;
 public class ZoneDetection : MonoBehaviour
 {
     private bool inZone = false;
-
-
-    
+   
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        //Attribu en True si le joueur est dans la zone
         if (collision.gameObject.name == "Player")
         {
             inZone = true;
@@ -18,7 +17,8 @@ public class ZoneDetection : MonoBehaviour
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if(collision.gameObject.name == "Player")
+        //Attribu en False si le joueur n'est pas dans la zone
+        if (collision.gameObject.name == "Player")
         {
             inZone = false;
         }
@@ -26,6 +26,7 @@ public class ZoneDetection : MonoBehaviour
 
     public bool Get()
     {
+        //Renvoie si le joueur est dans la zone
         return inZone;
     }
 }

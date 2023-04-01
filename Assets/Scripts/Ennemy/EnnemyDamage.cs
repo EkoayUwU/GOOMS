@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Damage : MonoBehaviour
+public class EnnemyDamage : MonoBehaviour
 {
     [SerializeField] PlayerHealth playerHealthRef;
     int dmg = 1;

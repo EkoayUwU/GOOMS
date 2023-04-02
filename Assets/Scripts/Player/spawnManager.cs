@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class spawnManager : MonoBehaviour
 {
-    static Vector3 spawnPosition = Vector3.zero;
+    static Vector3 spawnPosition = new Vector3 (-40,0,0);
 
     void Start()
     {
@@ -22,8 +22,10 @@ public class spawnManager : MonoBehaviour
     public void SetSpawnPosition(Vector3 Position)
     {
         spawnPosition = Position;
-    }
+    }  
 
-   
-    
+    public Vector3 GetSpawnPosition()
+    {
+        return spawnPosition;
+    }
 }

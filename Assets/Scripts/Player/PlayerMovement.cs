@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -31,6 +32,10 @@ public class PlayerMovement : MonoBehaviour
         {
             isJumping = true;
         }
+
+        if (horizontalValue > 0) transform.localScale = new Vector3(1f, 1f, 1f);
+        if (horizontalValue < 0) transform.localScale = new Vector3(-1f, 1f, 1f);
+
     }
 
     // Mise à jour fixe

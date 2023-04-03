@@ -9,7 +9,7 @@ public class CheckPointManager : MonoBehaviour
 
     void Update() // Cette méthode est appelée à chaque image.
     {
-        Debug.Log(checkpointTab[0] + " " + checkpointTab[1] + " " + checkpointTab[2]);
+        //Debug.Log(checkpointTab[0] + " " + checkpointTab[1] + " " + checkpointTab[2]);
 
         // Cette boucle vérifie si un point de contrôle a été atteint.
         for (int i = 0; i < checkpointTab.Length; i++)

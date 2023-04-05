@@ -12,14 +12,14 @@ public class CameraManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        transform.position = spawnManager.GetSpawnPosition() + new Vector3 (0f, 5f, 0) ;
+        transform.position = spawnManager.GetSpawnPosition() + new Vector3 (0f, 3f, 0) ;
     }
 
     // Update is called once per frame
     void Update()
     {
         //Modifie pos caméra en fonction des pos du joueurz
-        Vector3 targetPosition = new Vector3(playerRef.transform.position.x, playerRef.transform.position.y + 5f, -10);
+        Vector3 targetPosition = new Vector3(playerRef.transform.position.x, playerRef.transform.position.y + 3f, -10);
         gameObject.transform.position = Vector3.SmoothDamp(gameObject.transform.position, targetPosition, ref refVelocity, smoothTime);
     }
 

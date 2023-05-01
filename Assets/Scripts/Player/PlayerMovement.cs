@@ -8,9 +8,9 @@ public class PlayerMovement : MonoBehaviour
 {
     // Déclaration des variables
     Rigidbody2D rb;
-    float moveSpeedHorizontal = 450f;
     float horizontalValue;
-    float jumpForce = 8.5f;
+    [SerializeField] float moveSpeedHorizontal = 450f;
+    [SerializeField] float jumpForce = 8.5f;
     [SerializeField] bool isJumping = false;
     [SerializeField] bool canJump = false;
 

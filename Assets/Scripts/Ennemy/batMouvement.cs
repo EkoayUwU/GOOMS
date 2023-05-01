@@ -49,10 +49,11 @@ public class batMouvement : MonoBehaviour
             //transform.position = new Vector2(transform.position.x, Mathf.Lerp(7.76f, 3, 1));
             batPosition = transform.position;
             transform.position += QuadraticLerp(batPosition, playerPosition, 5f);
-            //if (isAttacking)
-            //{
-            //    transform.position = new Vector2(Mathf.Lerp(transform.position.x, playerPosition.x, 1f) + playerDirection * 5f, Mathf.Lerp(transform.position.y, playerPosition.y, 1f));
-            //}
+            
+        }
+        if (isAttacking)
+        {
+            transform.position = new Vector2(Mathf.Lerp(transform.position.x, playerPosition.x, 1f) + playerDirection * 5f, Mathf.Lerp(transform.position.y, playerPosition.y, 1f));
         }
 
     }

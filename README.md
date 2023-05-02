@@ -7,3 +7,4 @@
 5. Transition Salle ( plsrs scènes ou une seule scène + boss room ? )
 6. Zone pour bloquer le Curseur
 7. Régler décalage Animation 
+8. Ajout Death Zone

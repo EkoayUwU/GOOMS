@@ -8,3 +8,4 @@
 6. Zone pour bloquer le Curseur
 7. Régler décalage Animation 
 8. Ajout Death Zone
+9. Régler friction parois

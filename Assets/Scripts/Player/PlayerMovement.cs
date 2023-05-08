@@ -64,7 +64,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.tag == "Floor" || collision.tag == "Platform" || collision.tag == "staticProps")
         {
-            rb.gravityScale = 1;
+            rb.gravityScale = 1;         
             canJump = true;
         }
 
@@ -81,8 +81,9 @@ public class PlayerMovement : MonoBehaviour
     {
         if (canJump == false)
         {
-            yield return new WaitForSeconds(0.3f);
-            rb.gravityScale = 2.5f;
+            yield return new WaitForSeconds(0.4f);
+            rb.gravityScale = 3.75f;
+            
         }
     }
 }

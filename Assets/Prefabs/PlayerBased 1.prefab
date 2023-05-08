@@ -300,7 +300,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f8014c2dfee0664086db6d8fa301a6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeedHorizontal: 450
+  moveSpeedHorizontal: 475
   jumpForce: 12.5
   isJumping: 0
   canJump: 0

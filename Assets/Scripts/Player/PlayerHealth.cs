@@ -29,6 +29,7 @@ public class PlayerHealth : MonoBehaviour
         if (healthPoint <= 0) // si la santé du joueur est inférieure ou égale à 0
         {
             // désactiver le mouvement, changer la couleur du SpriteRenderer, désactiver le CapsuleCollider2D et changer le layer du gameObject
+            //rb.velocity = new Vector2(5, -15);         
             movementScript.enabled = false;
             sr.color = new Color(255f, 0f, 0f);
             capCollider.enabled = false;

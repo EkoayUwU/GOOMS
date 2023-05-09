@@ -26,7 +26,7 @@ public class EnnemyMovement : MonoBehaviour
 
 
     Vector2 target_velocity;
-    [SerializeField] float movementSpeed = 400f;
+    [SerializeField] float movementSpeed = 550f;
     Vector2 ref_velocity = Vector2.zero;
 
     bool aggroTaken = false;
@@ -85,13 +85,13 @@ public class EnnemyMovement : MonoBehaviour
         else
         {
             // Si l'ennemi ne poursuit pas le joueur, il suit les points de passage
-            movementSpeed = 400f;
+            movementSpeed = 550f;
             target = waypoints[indexWaypoints % waypoints.Length];
             directionTarget = target.position - gameObject.transform.position;
             direction = directionTarget.x > 0 ? 1 : -1;
 
             // Changement de direction si l'ennemi atteint un point de passage
-            if (Vector2.Distance(transform.position, target.position) < 1.0f)
+            if (Vector2.Distance(transform.position, target.position) < 1.25f)
             {
                 indexWaypoints++;
                 rb.velocity = direction == 1 ? new Vector2(2f, 0) : new Vector2(-2f, 0);
@@ -107,6 +107,8 @@ public class EnnemyMovement : MonoBehaviour
             SwapSens();
             aggroTaken = false;
         }
+
+        Debug.Log("Target : " + target);
 
     }
 

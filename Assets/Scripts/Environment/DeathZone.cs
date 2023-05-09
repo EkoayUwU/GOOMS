@@ -16,7 +16,7 @@ public class DeathZone : MonoBehaviour
     {
         if (collision.gameObject.name == "Player")
         {
-            playerHealthRef.Damage(dmg);
+            playerHealthRef.Damage(dmg);    
         }
     }
 }

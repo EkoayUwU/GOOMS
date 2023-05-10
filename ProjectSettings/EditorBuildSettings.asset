@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/LD_Tuto.unity
+    guid: b6444d85c9c1ce64aa395f5c3a47cb74
+  - enabled: 1
+    path: Assets/Scenes/MAIN_LEVEL.unity
+    guid: 32b6b4ed5e8dcc74892f81ff9a999fbb
   m_configObjects: {}

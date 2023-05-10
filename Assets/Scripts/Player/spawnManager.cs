@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class spawnManager : MonoBehaviour
 {
-    static Vector3 spawnPosition = new Vector3 (-360,-22,-4.5f);
+    static Vector2 spawnPosition = Vector2.zero;
 
     void Start()
     {
@@ -14,9 +14,11 @@ public class spawnManager : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Return))
+        string actualScene = "" + SceneManager.GetActiveScene().name;
+
+        if (Input.GetKeyDown(KeyCode.Return))
         {
-            SceneManager.LoadScene("LD_OVERVIEW");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
     public void SetSpawnPosition(Vector3 Position)

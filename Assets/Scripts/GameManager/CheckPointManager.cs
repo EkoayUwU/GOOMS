@@ -13,16 +13,10 @@ public class CheckPointManager : MonoBehaviour
     private void Start()
     {
         checkpointTab = new bool[NameCheckpointTab.Length];
-        Debug.Log(checkpointTab.Length);
     }
 
     void Update()
     {
-        for (int i = 0; i < checkpointTab.Length; i++)
-        {
-            Debug.Log(checkpointTab[i] + " " + i);
-            
-        }
         
         //Debug.Log(checkpointTab[0] + " " + checkpointTab[1] + " " + checkpointTab[2]);
 

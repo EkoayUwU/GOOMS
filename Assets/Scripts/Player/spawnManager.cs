@@ -21,7 +21,7 @@ public class spawnManager : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
-    public void SetSpawnPosition(Vector3 Position)
+    public void SetSpawnPosition(Vector2 Position)
     {
         spawnPosition = Position;
     }  

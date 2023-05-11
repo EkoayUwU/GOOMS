@@ -5,6 +5,8 @@ using UnityEngine;
 public class Lever : MonoBehaviour
 {
     [SerializeField] GameObject Waterfall;
+    [SerializeField] GameObject LightRef;
+    [SerializeField] Sprite green_light;
     bool isOpen = false;
     private bool isWaiting = false;
     private bool isWaiting2 = false;
@@ -44,5 +46,6 @@ public class Lever : MonoBehaviour
     {
         yield return new WaitForSeconds(0.75f);
         isWaiting2 = true;
+        LightRef.GetComponent<SpriteRenderer>().sprite = green_light;
     }
 }

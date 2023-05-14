@@ -45,7 +45,7 @@ public class EnnemyMovement : MonoBehaviour
 
 
     // Update est appelé une fois par frame
-    void Update()
+    void Update() 
     {
         // Si la zone de détection est désactivée, l'ennemi ne poursuit plus le joueur
         if (zoneRef.Get() == false)

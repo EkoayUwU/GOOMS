@@ -33,7 +33,7 @@ public class DragAndDrop : MonoBehaviour
         {
             Debug.Log("Relache");
             draggedProps.layer = 8;
-            rbDP.gravityScale = 1;
+            rbDP.gravityScale = 1.5f;
             draggedProps = null;
 
         }

@@ -6,15 +6,18 @@ using UnityEngine;
 public class Player_Movement : MonoBehaviour
 {
     Rigidbody2D rb;
+    Animator anim;
 
     //Variable mouvement horizontal
     float horizontalValue;
     [SerializeField] float movementSpeed;
 
+
     void Start()
     {
         //ref rigidbody2D player
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
 
@@ -25,6 +28,8 @@ public class Player_Movement : MonoBehaviour
 
         //récup valeur axe horizontal
         horizontalValue = Input.GetAxis("Horizontal");
+
+        if (horizontalValue != 0) anim.SetFloat("Speed", Mathf.Abs(horizontalValue));
     }
 
     private void FixedUpdate()

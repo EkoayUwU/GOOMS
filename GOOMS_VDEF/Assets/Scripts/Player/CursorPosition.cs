@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class CursorPosition : MonoBehaviour
 {
     [SerializeField] GameObject cameraRef;
+    [SerializeField] float camSpeed;
     void Update()
     {
         float tailleCam = cameraRef.GetComponent<Camera>().orthographicSize;
@@ -19,7 +20,7 @@ public class CursorPosition : MonoBehaviour
         if (Gamepad.current != null)
         {
             //Debug.Log("Manette");
-            transform.position = new Vector3(transform.position.x + Input.GetAxis("RightHorizontal") * 0.02f, transform.position.y + Input.GetAxis("RightVertical") * 0.02f, transform.position.z);
+            transform.position = new Vector3(transform.position.x + Input.GetAxis("RightHorizontal") * camSpeed, transform.position.y + Input.GetAxis("RightVertical") * camSpeed, transform.position.z);
         }        
         if(Gamepad.current == null)
         {

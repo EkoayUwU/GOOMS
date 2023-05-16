@@ -18,7 +18,6 @@ public class DragAndDrop : MonoBehaviour
         {
             if (Input.GetAxis("RT") > 0 && onProps && !forcedDrop)
             {
-                Debug.Log("RT");
                 draggedProps = refToDraggedProps;
                 draggedProps.layer = 9;
                 rbDP = draggedProps.GetComponent<Rigidbody2D>();
@@ -28,7 +27,6 @@ public class DragAndDrop : MonoBehaviour
             }
             if (Input.GetAxis("RT") <= 0 && draggedProps != null)
             {
-                Debug.Log("Relache");
                 draggedProps.layer = 8;
                 rbDP.gravityScale = 1.5f;
                 draggedProps = null;
@@ -40,7 +38,6 @@ public class DragAndDrop : MonoBehaviour
                 forcedDrop = true;
                 rbDP.constraints = RigidbodyConstraints2D.FreezeAll;
                 draggedProps.layer = 8;
-                Debug.Log("RB");
                 draggedProps = null;
             }
         }
@@ -49,7 +46,6 @@ public class DragAndDrop : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0) && onProps && !forcedDrop)
             {
-                Debug.Log("RT");
                 draggedProps = refToDraggedProps;
                 draggedProps.layer = 9;
                 rbDP = draggedProps.GetComponent<Rigidbody2D>();
@@ -59,7 +55,6 @@ public class DragAndDrop : MonoBehaviour
             }
             if (Input.GetMouseButtonUp(0) && draggedProps != null)
             {
-                Debug.Log("Relache");
                 draggedProps.layer = 8;
                 rbDP.gravityScale = 1.5f;
                 draggedProps = null;
@@ -71,7 +66,6 @@ public class DragAndDrop : MonoBehaviour
                 forcedDrop = true;
                 rbDP.constraints = RigidbodyConstraints2D.FreezeAll;
                 draggedProps.layer = 8;
-                Debug.Log("RB");
                 draggedProps = null;
             }
         }

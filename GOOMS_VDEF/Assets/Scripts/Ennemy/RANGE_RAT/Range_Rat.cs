@@ -13,19 +13,15 @@ public class Range_Rat : MonoBehaviour
 
     float range;
 
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
     {
-        range = Vector2.Distance(transform.position,playerRef.transform.position);
+        
+        range = Vector2.Distance(new Vector2(transform.position.x,0), new Vector2(playerRef.transform.position.x,0));
 
         if (range < Vector2.Distance(transform.position, rangeRef.position) && !isWaiting)
         {
-            Debug.Log("isIn");
             isWaiting = true;            
             StartCoroutine(Timer());
         }
@@ -34,14 +30,11 @@ public class Range_Rat : MonoBehaviour
 
     void Shoot()
     {
-
         Instantiate(Bullet, bulletSpawnPos.position, Quaternion.identity);
-        Debug.Log("Shoot");
     }
 
     IEnumerator Timer()
     {
-        Debug.Log("Timer");
         Shoot();
         yield return new WaitForSeconds(2);
         isWaiting = false;

@@ -20,7 +20,10 @@ public class bulletBehavior : MonoBehaviour
 
     private void Update()
     {
-        if (Vector2.Distance(transform.position, rangeRef.position) < 0.5f) Destroy(gameObject);
+        if (Vector2.Distance(new Vector2(transform.position.x, 0), new Vector2(playerRef.transform.position.x, 0)) < 0.5f)
+        {
+            Destroy(gameObject);
+        }
     }
     // Update is called once per frame
     private void FixedUpdate()

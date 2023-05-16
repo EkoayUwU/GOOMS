@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Platform
   - Ennemy
+  - Floor
+  - staticProps
   layers:
   - Default
   - TransparentFX
@@ -17,8 +19,8 @@ TagManager:
   - Player
   - staticProps
   - movingProps
-  - 
-  - 
+  - Cursor
+  - Valve
   - 
   - 
   - 

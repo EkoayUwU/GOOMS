@@ -19,7 +19,7 @@ public class CursorPosition : MonoBehaviour
         if (Gamepad.current != null)
         {
             //Debug.Log("Manette");
-            transform.position = new Vector3(transform.position.x + Input.GetAxis("RightHorizontal") * 0.01f, transform.position.y + Input.GetAxis("RightVertical") * 0.01f, transform.position.z);
+            transform.position = new Vector3(transform.position.x + Input.GetAxis("RightHorizontal") * 0.02f, transform.position.y + Input.GetAxis("RightVertical") * 0.02f, transform.position.z);
         }        
         if(Gamepad.current == null)
         {

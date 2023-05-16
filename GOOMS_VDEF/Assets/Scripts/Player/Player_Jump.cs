@@ -10,7 +10,7 @@ public class Player_Jump : MonoBehaviour
     private float jumpTimer; // Timer du saut
     private bool isJumping; // Indique si le joueur est en train de sauter
     private bool jumpInputReleased; // Indique si la touche de saut a été relâchée
-    bool canJump;
+    [SerializeField] bool canJump;
 
     private Rigidbody2D rb;
 
@@ -21,7 +21,7 @@ public class Player_Jump : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetButtonDown("Jump") && !isJumping && canJump)
+        if (Input.GetButtonDown("Jump") && canJump)
         {
             StartJump();
         }
@@ -69,7 +69,7 @@ public class Player_Jump : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         canJump = true;
     }

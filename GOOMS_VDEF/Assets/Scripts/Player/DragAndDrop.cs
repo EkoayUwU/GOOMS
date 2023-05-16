@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class DragAndDrop : MonoBehaviour
 {
@@ -10,42 +11,71 @@ public class DragAndDrop : MonoBehaviour
     [SerializeField] GameObject draggedProps;
     Rigidbody2D rbDP;
     
-   
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetAxis("RT") > 0 && onProps && !forcedDrop)
+        if(Gamepad.current != null)
         {
-            Debug.Log("RT");
-            draggedProps = refToDraggedProps;
-            draggedProps.layer = 9;
-            rbDP = draggedProps.GetComponent<Rigidbody2D>();
-            rbDP.gravityScale = 0;
-            rbDP.angularDrag = 2.5f;
-            rbDP.constraints = RigidbodyConstraints2D.None;
-        }
-        if(Input.GetAxis("RT") <= 0 && draggedProps != null)
-        {
-            Debug.Log("Relache");
-            draggedProps.layer = 8;
-            rbDP.gravityScale = 1.5f;
-            draggedProps = null;
+            if (Input.GetAxis("RT") > 0 && onProps && !forcedDrop)
+            {
+                Debug.Log("RT");
+                draggedProps = refToDraggedProps;
+                draggedProps.layer = 9;
+                rbDP = draggedProps.GetComponent<Rigidbody2D>();
+                rbDP.gravityScale = 0;
+                rbDP.angularDrag = 2.5f;
+                rbDP.constraints = RigidbodyConstraints2D.None;
+            }
+            if (Input.GetAxis("RT") <= 0 && draggedProps != null)
+            {
+                Debug.Log("Relache");
+                draggedProps.layer = 8;
+                rbDP.gravityScale = 1.5f;
+                draggedProps = null;
 
+            }
+
+            if (Input.GetButton("RB") && draggedProps)
+            {
+                forcedDrop = true;
+                rbDP.constraints = RigidbodyConstraints2D.FreezeAll;
+                draggedProps.layer = 8;
+                Debug.Log("RB");
+                draggedProps = null;
+            }
         }
 
-        if (Input.GetButton("RB") && draggedProps)
+        else
         {
-            forcedDrop = true;
-            rbDP.constraints = RigidbodyConstraints2D.FreezeAll;
-            draggedProps.layer = 8;
-            Debug.Log("RB");
-            draggedProps = null;
+            if (Input.GetMouseButtonDown(0) && onProps && !forcedDrop)
+            {
+                Debug.Log("RT");
+                draggedProps = refToDraggedProps;
+                draggedProps.layer = 9;
+                rbDP = draggedProps.GetComponent<Rigidbody2D>();
+                rbDP.gravityScale = 0;
+                rbDP.angularDrag = 2.5f;
+                rbDP.constraints = RigidbodyConstraints2D.None;
+            }
+            if (Input.GetMouseButtonUp(0) && draggedProps != null)
+            {
+                Debug.Log("Relache");
+                draggedProps.layer = 8;
+                rbDP.gravityScale = 1.5f;
+                draggedProps = null;
+
+            }
+
+            if (Input.GetMouseButtonDown(1) && draggedProps)
+            {
+                forcedDrop = true;
+                rbDP.constraints = RigidbodyConstraints2D.FreezeAll;
+                draggedProps.layer = 8;
+                Debug.Log("RB");
+                draggedProps = null;
+            }
         }
+        
 
         if (forcedDrop) Invoke("Timer", 1.0f);
     }

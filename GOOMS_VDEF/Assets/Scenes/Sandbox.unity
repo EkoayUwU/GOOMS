@@ -138,6 +138,7 @@ GameObject:
   m_Component:
   - component: {fileID: 173046894}
   - component: {fileID: 173046893}
+  - component: {fileID: 173046897}
   - component: {fileID: 173046896}
   - component: {fileID: 173046892}
   m_Layer: 0
@@ -211,8 +212,8 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 884c2de8c366bea47bf99d472652c563, type: 3}
   m_Color: {r: 1, g: 0, b: 0.8248067, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
+  m_FlipX: 1
+  m_FlipY: 1
   m_DrawMode: 0
   m_Size: {x: 3.09, y: 3.17}
   m_AdaptiveModeThreshold: 0.5
@@ -228,7 +229,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 173046891}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 70, y: 6.51, z: 0}
+  m_LocalPosition: {x: 63.6, y: 6.58, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -242,15 +243,36 @@ CapsuleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 173046891}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.049610138, y: 0}
   m_Size: {x: 1.324089, y: 3.17}
   m_Direction: 0
+--- !u!50 &173046897
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173046891}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &360558868
 GameObject:
   m_ObjectHideFlags: 0
@@ -558,7 +580,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 63.2, y: 0.17, z: -10}
+  m_LocalPosition: {x: 56.8, y: 0.17, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -633,7 +655,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc412bcc565982c44989c0a2e3580464, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 450
+  movementSpeed: 45
 --- !u!50 &625777248
 Rigidbody2D:
   serializedVersion: 4
@@ -715,7 +737,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 625777245}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 63.2, y: -2.6599998, z: 0}
+  m_LocalPosition: {x: 48.97, y: -2.45, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1286,7 +1308,7 @@ GameObject:
   - component: {fileID: 1080196039}
   m_Layer: 0
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1397,7 +1419,7 @@ GameObject:
   - component: {fileID: 1342339506}
   m_Layer: 0
   m_Name: Square (2)
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1703,7 +1725,7 @@ GameObject:
   - component: {fileID: 1728635118}
   m_Layer: 0
   m_Name: Square (1)
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1945,7 +1967,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraRef: {fileID: 519420028}
-  camSpeed: 0.05
+  camSpeed: 0.01
 --- !u!212 &1742804243
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2006,7 +2028,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1742804241}
   m_LocalRotation: {x: -0, y: -0, z: 0.3826836, w: 0.92387944}
-  m_LocalPosition: {x: 11.8125, y: 0, z: 10}
+  m_LocalPosition: {x: 12.8, y: 0, z: 10}
   m_LocalScale: {x: 0.37244, y: 0.37244, z: 0.37244}
   m_ConstrainProportionsScale: 0
   m_Children: []

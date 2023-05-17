@@ -27,9 +27,9 @@ public class Player_Movement : MonoBehaviour
         transform.localScale = horizontalValue > 0 ? new Vector3(1, 1, 1) : horizontalValue == 0 ? transform.localScale : new Vector3(-1,1,1);
 
         //récup valeur axe horizontal
-        horizontalValue = Input.GetAxis("Horizontal");
+        horizontalValue = Input.GetAxis("Horizontal") * 10;
 
-        if (horizontalValue != 0) anim.SetFloat("Speed", Mathf.Abs(horizontalValue));
+        anim.SetFloat("Speed", Mathf.Abs(horizontalValue));
     }
 
     private void FixedUpdate()

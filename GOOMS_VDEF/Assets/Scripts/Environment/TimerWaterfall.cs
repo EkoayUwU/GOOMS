@@ -12,6 +12,7 @@ public class TimerWaterfall : MonoBehaviour
     void Update()
     {
         gameObject.GetComponent<SpriteRenderer>().enabled = isActive ? true : false;
+        gameObject.GetComponent<BoxCollider2D>().enabled = isActive ? true : false;
         
         if (!isTimed)
         {

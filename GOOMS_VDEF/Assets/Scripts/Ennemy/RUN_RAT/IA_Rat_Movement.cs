@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class IA_Rat_Movement : MonoBehaviour
 {
     [SerializeField] GameObject playerRef;
     [SerializeField] ZoneDetection zoneRef;
-    [SerializeField] MovingPlatform platformRef;
+    [SerializeField] MovingPlatform[] platformRef;
 
     [SerializeField] Transform[] Waypoints;
     int indexWaypoints;
@@ -67,16 +68,27 @@ public class IA_Rat_Movement : MonoBehaviour
 
     bool CheckGauche()
     {
-        return (((playerRef.transform.position.x - transform.position.x < 0) && transform.localScale.x == -1) && !platformRef.Get()) ? true : false;
+        return (((playerRef.transform.position.x - transform.position.x < 0) && transform.localScale.x == -1) && !isOnPlatform()) ? true : false;
     }
 
     bool CheckDroite()
     {
-        return (((playerRef.transform.position.x - transform.position.x > 0) && transform.localScale.x == 1) && !platformRef.Get()) ? true : false;
+        return (((playerRef.transform.position.x - transform.position.x > 0) && transform.localScale.x == 1) && !isOnPlatform()) ? true : false;
     }
 
     private void SwapSens()
     {
         transform.localScale = target.position.x > transform.position.x ? new Vector3(1f, 1f, 1f) : new Vector3(-1f, 1f, 1f);
     }
+
+    bool isOnPlatform()
+    {
+        bool temp = false;
+        for(int i = 0; i < platformRef.Length; i++)
+        {
+            if (platformRef[i].Get()) temp = true;
+        }
+        return temp;      
+    }
 }
+

@@ -78,6 +78,4 @@ public class Player_Jump : MonoBehaviour
     {
         canJump = false;
     }
-
-
 }

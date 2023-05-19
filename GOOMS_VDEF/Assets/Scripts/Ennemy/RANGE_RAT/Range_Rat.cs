@@ -36,7 +36,7 @@ public class Range_Rat : MonoBehaviour
     IEnumerator Timer()
     {
         Shoot();
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1.25f);
         isWaiting = false;
 
     }

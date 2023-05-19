@@ -23895,6 +23895,67 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &829432796
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 829432799}
+  - component: {fileID: 829432798}
+  - component: {fileID: 829432797}
+  m_Layer: 7
+  m_Name: GrabReach
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &829432797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829432796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b5c9428076dc8047a644d2819f4d7e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!58 &829432798
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829432796}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.25, y: 0}
+  serializedVersion: 2
+  m_Radius: 3
+--- !u!4 &829432799
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829432796}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1081890414}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &831189538
 GameObject:
   m_ObjectHideFlags: 0
@@ -32472,6 +32533,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca28865735132624abadbdcd71183adf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1081890414 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6188320441187556909, guid: 20a8b7ae287bc654cb40a54b2ac769d1, type: 3}
+  m_PrefabInstance: {fileID: 1081890412}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1081890415 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6188320441187556900, guid: 20a8b7ae287bc654cb40a54b2ac769d1, type: 3}
@@ -63307,6 +63373,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6391467085909012944, guid: 425c11df5b4eb774cab1a5dd32e3f34b, type: 3}
+      propertyPath: camSpeed
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6391467085909012944, guid: 425c11df5b4eb774cab1a5dd32e3f34b, type: 3}
+      propertyPath: grabReach
+      value: 
+      objectReference: {fileID: 829432797}
     - target: {fileID: 6391467086370749033, guid: 425c11df5b4eb774cab1a5dd32e3f34b, type: 3}
       propertyPath: m_RootOrder
       value: 2

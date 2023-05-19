@@ -7,6 +7,8 @@ public class CursorPosition : MonoBehaviour
 {
     [SerializeField] GameObject cameraRef;
     [SerializeField] float camSpeed;
+
+    [SerializeField] PropsGrabReach grabReach;
     void Update()
     {
         float tailleCam = cameraRef.GetComponent<Camera>().orthographicSize;
@@ -21,12 +23,14 @@ public class CursorPosition : MonoBehaviour
         {
             //Debug.Log("Manette");
             transform.position = new Vector3(transform.position.x + Input.GetAxis("RightHorizontal") * camSpeed, transform.position.y + Input.GetAxis("RightVertical") * camSpeed, transform.position.z);
+            if (grabReach.GetOnReach()) transform.position = grabReach.GetProps().transform.position;
         }        
         if(Gamepad.current == null)
         {
             //Debug.Log("Souris");
             Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             gameObject.transform.position = mousePosition;
+            if (grabReach.GetOnReach()) transform.position = grabReach.GetProps().transform.position;
         }
     }
 

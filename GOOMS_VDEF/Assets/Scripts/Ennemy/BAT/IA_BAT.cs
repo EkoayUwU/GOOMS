@@ -28,8 +28,6 @@ public class IA_BAT : MonoBehaviour
     [SerializeField] GameObject pointPlayerExt;
     [SerializeField] GameObject pointPlayerInt;
 
-
-
     private void Start()
     {
         onCD = false;
@@ -58,6 +56,7 @@ public class IA_BAT : MonoBehaviour
         // si hit collider
         if (hitLeft)
         {
+            //Debug.Log(hitLeft.collider.gameObject.layer);
             if (hitLeft.collider.name == "Player" && isDone && !onCD)
             {
                 isDone = false;
@@ -67,6 +66,7 @@ public class IA_BAT : MonoBehaviour
         }
         if (hitRight)
         {
+            //Debug.Log(hitRight.collider.gameObject.layer);
             if (hitRight.collider.name == "Player" && isDone && !onCD)
             {
                 isDone = false;
@@ -137,8 +137,7 @@ public class IA_BAT : MonoBehaviour
                 isDone = true;
                 StartCoroutine(CD());
             }
-            
-            
+                        
         }
 
         if (collision.name == "Player")

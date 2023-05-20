@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class PropsGrabReach : MonoBehaviour
 {
+    [SerializeField] Transform playerRef;
     bool onReach;
     GameObject PropsRef;
 
+    private void Update()
+    {
+        transform.position = playerRef.position;
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

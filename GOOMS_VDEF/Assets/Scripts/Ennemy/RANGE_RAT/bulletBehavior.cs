@@ -25,7 +25,7 @@ public class bulletBehavior : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    // Update is called once per frame
+
     private void FixedUpdate()
     {
         Vector2 target_velocity = new Vector2(-1 * travelSpeed * Time.deltaTime, 0);
@@ -45,6 +45,9 @@ public class bulletBehavior : MonoBehaviour
             collision.gameObject.GetComponent<PlayerHealth>().Damage(1);
             Destroy(gameObject);
         }
-        Destroy(gameObject);
+        if(collision.name != "Cursor")
+        {
+            Destroy(gameObject);    
+        }
     }
 }

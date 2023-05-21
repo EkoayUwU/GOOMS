@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class bulletBehavior : MonoBehaviour
 {
-    [SerializeField] GameObject playerRef;
+    GameObject playerRef;
     [SerializeField] Transform rangeRef;
 
     Rigidbody2D rb;
@@ -16,6 +16,7 @@ public class bulletBehavior : MonoBehaviour
     {
         //StartCoroutine(LifeTimer());
         rb = GetComponent<Rigidbody2D>();
+        playerRef = GameObject.FindGameObjectWithTag("Player");
     }
 
     private void Update()

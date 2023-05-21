@@ -24,7 +24,7 @@ public class CameraManager : MonoBehaviour
     public bool isLerpingYDamping { get; private set; }
     public bool LerpedFromPlayerFalling { get; set; }
 
-    
+    Coroutine _lerpYPanCoroutine;
 
     //Avoir un seule cam manager d'actif
     void Awake()
@@ -50,7 +50,7 @@ public class CameraManager : MonoBehaviour
     #region Lerp Y Damping
     public void LerpYDamping(bool isPlayerFalling)
     {
-        StartCoroutine(LerpYAction(isPlayerFalling));
+        _lerpYPanCoroutine = StartCoroutine(LerpYAction(isPlayerFalling));
     }
 
     IEnumerator LerpYAction(bool isPlayerFalling)

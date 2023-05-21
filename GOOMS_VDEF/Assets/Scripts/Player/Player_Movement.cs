@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Player_Movement : MonoBehaviour
 {
+    [SerializeField] CameraFollowObject _cameraFollowObject;
+    bool isRotating = false;
     Rigidbody2D rb;
     Animator anim;
 
@@ -12,8 +14,10 @@ public class Player_Movement : MonoBehaviour
     float horizontalValue;
     [SerializeField] float movementSpeed;
 
+    public bool isFacingRight = true;
 
-    void Start()
+
+    void Awake()
     {
         //ref rigidbody2D player
         rb = GetComponent<Rigidbody2D>();
@@ -23,9 +27,7 @@ public class Player_Movement : MonoBehaviour
 
     void Update()
     {
-        //sens player
-        transform.localScale = horizontalValue > 0 ? new Vector3(1, 1, 1) : horizontalValue == 0 ? transform.localScale : new Vector3(-1,1,1);
-
+        
         //récup valeur axe horizontal
         horizontalValue = Input.GetAxis("Horizontal") * 10;
 
@@ -34,7 +36,31 @@ public class Player_Movement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (Input.GetAxis("Horizontal") > 0 && !isFacingRight) Turn();
+        else if (Input.GetAxis("Horizontal") < 0 && isFacingRight) Turn();
+
         //Déplacement horizontal player
         rb.velocity = new Vector2(horizontalValue * movementSpeed * Time.deltaTime, rb.velocity.y);
+    }
+
+    void Turn()
+    {
+        if(isFacingRight)
+        {
+            Vector3 rotator = new Vector3(transform.rotation.x, 180f, transform.rotation.y);
+            transform.rotation = Quaternion.Euler(rotator);
+            isFacingRight = !isFacingRight;
+
+            _cameraFollowObject.CallTurn();
+        }
+        else
+        {
+            Vector3 rotator = new Vector3(transform.rotation.x, 0f, transform.rotation.y);
+            transform.rotation = Quaternion.Euler(rotator);
+            isFacingRight = !isFacingRight;
+
+
+            _cameraFollowObject.CallTurn();
+        }
     }
 }

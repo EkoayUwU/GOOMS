@@ -39,6 +39,8 @@ public class Player_Movement : MonoBehaviour
 
         anim.SetFloat("Speed", Mathf.Abs(horizontalValue));
 
+        #region Camera 
+
         //si vitesse > fallSpeedThreshold, modifie damping Y de la cam pour un décalage lors de la chute
         if (rb.velocity.y < _fallSpeedYDampingChangeThreshold && !CameraManager.instance.isLerpingYDamping && !CameraManager.instance.LerpedFromPlayerFalling) CameraManager.instance.LerpYDamping(true);
         //Si immobile ou mouvement vers le haut
@@ -47,6 +49,7 @@ public class Player_Movement : MonoBehaviour
             //reset les get/set pour pouvoir être rappeler
             CameraManager.instance.LerpedFromPlayerFalling = false;
             CameraManager.instance.LerpYDamping(false);
+        #endregion
         }
     }
 

@@ -1,14 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class CheckPoint : MonoBehaviour
 {
 
     [SerializeField] spawnManager spawnManager;
-    [SerializeField] Sprite greenFlag;
-
     [SerializeField] CheckPointManager CheckPointManager;
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -25,7 +25,6 @@ public class CheckPoint : MonoBehaviour
         //Désactive tous les checkpoints se trouvant avant le dernier checkpoint activé
         if (CheckPointManager.GetCheckPointState(gameObject.name))
         {
-            GetComponent<SpriteRenderer>().sprite = greenFlag;
             GetComponent<BoxCollider2D>().enabled = false;
         }
 

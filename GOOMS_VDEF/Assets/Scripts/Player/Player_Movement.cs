@@ -44,7 +44,7 @@ public class Player_Movement : MonoBehaviour
         //si vitesse > fallSpeedThreshold, modifie damping Y de la cam pour un décalage lors de la chute
         if (rb.velocity.y < _fallSpeedYDampingChangeThreshold && !CameraManager.instance.isLerpingYDamping && !CameraManager.instance.LerpedFromPlayerFalling) CameraManager.instance.LerpYDamping(true);
         //Si immobile ou mouvement vers le haut
-        if (rb.velocity.y >= 0f && !CameraManager.instance.isLerpingYDamping && !CameraManager.instance.LerpedFromPlayerFalling)
+        if (rb.velocity.y >= 0f && !CameraManager.instance.isLerpingYDamping && !CameraManager.instance.LerpedFromPlayerFalling)    
         {
             //reset les get/set pour pouvoir être rappeler
             CameraManager.instance.LerpedFromPlayerFalling = false;

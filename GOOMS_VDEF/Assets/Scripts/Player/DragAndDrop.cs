@@ -81,7 +81,7 @@ public class DragAndDrop : MonoBehaviour
             refToDraggedProps = collision.gameObject;
             onProps = true;
         }
-        Debug.Log(collision.gameObject.name);   
+        //Debug.Log(collision.gameObject.name);   
     }
 
     private void OnTriggerExit2D(Collider2D collision)

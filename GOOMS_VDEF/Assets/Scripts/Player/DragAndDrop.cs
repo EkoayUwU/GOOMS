@@ -33,7 +33,7 @@ public class DragAndDrop : MonoBehaviour
 
             }
 
-            if (Input.GetButton("RB") && draggedProps)
+            if (Input.GetAxis("LT") > 0 && draggedProps)
             {
                 forcedDrop = true;
                 rbDP.constraints = RigidbodyConstraints2D.FreezeAll;

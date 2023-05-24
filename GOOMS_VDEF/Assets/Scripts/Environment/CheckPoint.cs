@@ -9,6 +9,15 @@ public class CheckPoint : MonoBehaviour
     [SerializeField] spawnManager spawnManager;
     [SerializeField] CheckPointManager CheckPointManager;
 
+    [SerializeField] CinemachineVirtualCamera UsedCameraRef;
+
+    CameraManager cmRef;
+
+    private void Start()
+    {
+        //Ref CameraManager
+        cmRef = GameObject.Find("Cameras").GetComponent<CameraManager>();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -17,6 +26,14 @@ public class CheckPoint : MonoBehaviour
             //Set les pos de spawn du joueur selon le checkpoint et modifie létat du checkpoint dans le tableau 
             spawnManager.SetSpawnPosition(transform.position);
             CheckPointManager.SetCheckPoint(gameObject.name);
+
+            //Debug.Log("CHECKPOINT");
+
+            //Set la cam en fonction du checkpoint sur lequel le player respawn
+            cmRef._CurrentCamera.enabled = false;
+            cmRef._CurrentCamera = UsedCameraRef;
+            cmRef._CurrentCamera.enabled = true;
+
         }
     }
 

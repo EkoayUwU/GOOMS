@@ -10,7 +10,12 @@ public class WaterBehavior : MonoBehaviour
     private void Start()
     {
         isAscending = false;
+
+        sr = GetComponent<SpriteRenderer>();
+
         SetWater();
+
+     
     }
 
 

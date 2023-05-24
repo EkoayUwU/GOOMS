@@ -7,7 +7,9 @@ using Cinemachine;
 public class CheckPointManager : MonoBehaviour
 {
     [SerializeField] GameObject[] NameCheckpointTab;
+
     static bool[] checkpointTab;   // Un tableau de valeurs booléennes pour stocker les états des points de contrôle.
+
     bool checkpointState;
 
 
@@ -64,16 +66,19 @@ public class CheckPointManager : MonoBehaviour
             if (CheckPointName == NameCheckpointTab[i].name)
             {
                 checkpointState = checkpointTab[i];
-            }
-            
+            }           
         }
-
         return checkpointState;
     }
 
     void CheckPoint(int i)
     {
         checkpointTab[i] = true;
+    }
+
+    public void ResetCheckPointTab()
+    {
+        for (int i = 0; i < checkpointTab.Length; i++) checkpointTab[i] = false;
     }
    
 }

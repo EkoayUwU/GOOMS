@@ -9,27 +9,18 @@ public class CameraManager : MonoBehaviour
     //Array Camera
     [SerializeField] CinemachineVirtualCamera[] VirtualCamerasList;
     //Ref Camera Active
-    [SerializeField] CinemachineVirtualCamera _CurrentCamera;
+    public CinemachineVirtualCamera _CurrentCamera;
 
     CinemachineFramingTransposer _framingTransposer;
 
-    //Lerp Y Damping Variables
-    bool isLerpYDamping;
-
-    float _fallPanAmount = 0.25f;
-    float _fallYPanTime = 0.35f;
-    public float _fallSpeedYDampingChangeThreshold = 15f;
-    float _normYPanAmount;
-
-    public bool isLerpingYDamping { get; private set; }
-    public bool LerpedFromPlayerFalling { get; set; }
-
-    Coroutine _lerpYPanCoroutine;
 
     //Avoir un seule cam manager d'actif
     void Awake()
     {
         if (instance == null) instance = this;
+
+        _CurrentCamera = VirtualCamerasList[0];
+        
     }
 
 
@@ -47,47 +38,9 @@ public class CameraManager : MonoBehaviour
         }
     }
 
-    #region Lerp Y Damping
-    public void LerpYDamping(bool isPlayerFalling)
-    {
-        _lerpYPanCoroutine = StartCoroutine(LerpYAction(isPlayerFalling));
-    }
-
-    IEnumerator LerpYAction(bool isPlayerFalling)
-    {
-        isLerpYDamping = true;
-
-        //Grab start damping amount
-        float startDampAmount = _framingTransposer.m_YDamping;
-        float endDampAmount = 0f;
-
-        //determine end damping amount
-        if (isPlayerFalling)
-        {
-            endDampAmount = _fallPanAmount;
-            LerpedFromPlayerFalling = true;
-        }
-        else endDampAmount = _normYPanAmount;
-
-
-        //lerp pan amount
-        float elapsedTime = 0f;
-        while (elapsedTime < _fallPanAmount)
-        {
-            elapsedTime += Time.deltaTime;
-
-            float lerpedPanAmount = Mathf.Lerp(startDampAmount, endDampAmount, (elapsedTime / _fallPanAmount));
-            _framingTransposer.m_YDamping = lerpedPanAmount;
-
-            yield return null;
-        }
-
-        isLerpYDamping = false;
-    }
-    #endregion
-
     #region Swap Camera
 
+    //Swap entre 2 caméras (changement zone)
     public void SwapCamera(CinemachineVirtualCamera cameraFromLeft, CinemachineVirtualCamera cameraFromRight, Vector2 triggerExitDirection)
     {
         //if current camera is left camera and player exit on right

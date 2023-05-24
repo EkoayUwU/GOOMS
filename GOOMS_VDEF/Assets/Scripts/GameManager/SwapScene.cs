@@ -12,8 +12,12 @@ public class SwapScene : MonoBehaviour
     {
         if (collision.gameObject.name == "Player")
         {
+            //Reset pos player + Load Scène suivante
             SpawnManager.SetSpawnPosition(Vector2.zero);
             SceneManager.LoadScene(SceneName);
+
+            //Reset le tab de checkpoint lors du changement de scène
+            GameObject.Find("GAMEMANAGER").GetComponent<CheckPointManager>().ResetCheckPointTab();
         }
     }
 }

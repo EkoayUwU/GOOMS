@@ -7,7 +7,7 @@ public class Player_Movement : MonoBehaviour
 {
     [SerializeField] CameraFollowObject _cameraFollowObject;
     [SerializeField] CameraSmoothFlip _cameraNoY;
-    bool isRotating = false;
+
     Rigidbody2D rb;
     Animator anim;
 
@@ -17,7 +17,6 @@ public class Player_Movement : MonoBehaviour
 
     //Variable Camera
     public bool isFacingRight = true;
-    float _fallSpeedYDampingChangeThreshold; 
 
 
 
@@ -26,8 +25,6 @@ public class Player_Movement : MonoBehaviour
         //ref rigidbody2D player
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-
-        _fallSpeedYDampingChangeThreshold = CameraManager.instance._fallSpeedYDampingChangeThreshold;
     }
 
 
@@ -39,18 +36,6 @@ public class Player_Movement : MonoBehaviour
 
         anim.SetFloat("Speed", Mathf.Abs(horizontalValue));
 
-        #region Camera 
-
-        //si vitesse > fallSpeedThreshold, modifie damping Y de la cam pour un décalage lors de la chute
-        if (rb.velocity.y < _fallSpeedYDampingChangeThreshold && !CameraManager.instance.isLerpingYDamping && !CameraManager.instance.LerpedFromPlayerFalling) CameraManager.instance.LerpYDamping(true);
-        //Si immobile ou mouvement vers le haut
-        if (rb.velocity.y >= 0f && !CameraManager.instance.isLerpingYDamping && !CameraManager.instance.LerpedFromPlayerFalling)    
-        {
-            //reset les get/set pour pouvoir être rappeler
-            CameraManager.instance.LerpedFromPlayerFalling = false;
-            CameraManager.instance.LerpYDamping(false);
-        #endregion
-        }
     }
 
     private void FixedUpdate()

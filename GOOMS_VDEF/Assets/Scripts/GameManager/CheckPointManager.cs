@@ -17,8 +17,13 @@ public class CheckPointManager : MonoBehaviour
 
     private void Start()
     {
-        checkpointTab = checkpointTab == null ? new bool[NameCheckpointTab.Length] : checkpointTab;
+        //checkpointTab = checkpointTab == null ? new bool[NameCheckpointTab.Length] : checkpointTab;
 
+        checkpointTab = new bool[NameCheckpointTab.Length];
+        for (int i = 0; i < NameCheckpointTab.Length; i++)
+        {
+            checkpointTab[i] = false;
+        }
     }
 
     void Update()
@@ -35,6 +40,12 @@ public class CheckPointManager : MonoBehaviour
                 }
             }
         }
+
+        //Debug
+        //for(int i = 0; i < checkpointTab.Length; i++)
+        //{
+        //    Debug.Log("CheckPoint " + i + " " + checkpointTab[i]);
+        //}
 
         
     }

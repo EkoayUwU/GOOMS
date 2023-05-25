@@ -41,12 +41,6 @@ public class bulletBehavior : MonoBehaviour
         rb.velocity = Vector2.SmoothDamp(rb.velocity, target_velocity,ref ref_velocity, 0.5f);
     }
 
-    //IEnumerator LifeTimer()
-    //{
-    //    yield return new WaitForSeconds(2);
-    //    Destroy(gameObject);
-    //}
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.name == "Player")

@@ -23,7 +23,7 @@ public class DragAndDrop : MonoBehaviour
                 rbDP = draggedProps.GetComponent<Rigidbody2D>();
                 rbDP.gravityScale = 0;
                 rbDP.angularDrag = 2.5f;
-                rbDP.constraints = RigidbodyConstraints2D.None;
+                //rbDP.constraints = RigidbodyConstraints2D.None;
             }
             if (Input.GetAxis("RT") <= 0 && draggedProps != null)
             {
@@ -33,13 +33,13 @@ public class DragAndDrop : MonoBehaviour
 
             }
 
-            if (Input.GetAxis("LT") > 0 && draggedProps)
-            {
-                forcedDrop = true;
-                rbDP.constraints = RigidbodyConstraints2D.FreezeAll;
-                draggedProps.layer = 8;
-                draggedProps = null;
-            }
+            //if (Input.GetAxis("LT") > 0 && draggedProps)
+            //{
+            //    forcedDrop = true;
+            //    rbDP.constraints = RigidbodyConstraints2D.FreezeAll;
+            //    draggedProps.layer = 8;
+            //    draggedProps = null;
+            //}
         }
 
         else
@@ -51,23 +51,26 @@ public class DragAndDrop : MonoBehaviour
                 rbDP = draggedProps.GetComponent<Rigidbody2D>();
                 rbDP.gravityScale = 0;
                 rbDP.angularDrag = 2.5f;
+
                 rbDP.constraints = RigidbodyConstraints2D.None;
+                rbDP.constraints = RigidbodyConstraints2D.FreezePosition;
             }
             if (Input.GetMouseButtonUp(0) && draggedProps != null)
             {
                 draggedProps.layer = 8;
                 rbDP.gravityScale = 1.5f;
-                draggedProps = null;
-
-            }
-
-            if (Input.GetMouseButtonDown(1) && draggedProps)
-            {
-                forcedDrop = true;
                 rbDP.constraints = RigidbodyConstraints2D.FreezeAll;
-                draggedProps.layer = 8;
                 draggedProps = null;
+
             }
+
+            //if (Input.GetMouseButtonDown(1) && draggedProps)
+            //{
+            //    forcedDrop = true;
+            //    rbDP.constraints = RigidbodyConstraints2D.FreezeAll;
+            //    draggedProps.layer = 8;
+            //    draggedProps = null;
+            //}
         }
         
 

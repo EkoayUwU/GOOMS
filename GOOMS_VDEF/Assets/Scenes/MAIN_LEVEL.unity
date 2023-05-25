@@ -236,7 +236,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3473666}
   m_LocalRotation: {x: -0, y: -0, z: -0.5, w: 0.8660254}
-  m_LocalPosition: {x: 375.06995, y: 6.8799744, z: 2.3582249}
+  m_LocalPosition: {x: 367.71997, y: 6.8799744, z: 2.3582249}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -445,7 +445,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4707396}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -864,7 +864,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 29250575}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 346.51, y: -2.350006, z: 5.622719}
+  m_LocalPosition: {x: 339.16003, y: -2.350006, z: 5.622719}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1019,7 +1019,7 @@ GameObject:
   - component: {fileID: 33476685}
   - component: {fileID: 33476684}
   m_Layer: 0
-  m_Name: Plafond (16)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1407,7 +1407,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 46188083}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -1897,7 +1897,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 57657481}
   m_LocalRotation: {x: -0, y: -0, z: -0.70710576, w: 0.70710784}
-  m_LocalPosition: {x: 324.94, y: -9.84, z: 5.622719}
+  m_LocalPosition: {x: 317.59003, y: -9.84, z: 5.622719}
   m_LocalScale: {x: 0.65, y: -1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2304,7 +2304,7 @@ GameObject:
   - component: {fileID: 72277127}
   - component: {fileID: 72277126}
   m_Layer: 0
-  m_Name: Plafond (14)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2878,7 +2878,7 @@ GameObject:
   - component: {fileID: 81774496}
   - component: {fileID: 81774495}
   m_Layer: 0
-  m_Name: Plafond (8)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2932,7 +2932,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 81774493}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -3002,7 +3002,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 82387767}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 314.26, y: 24.54, z: 5.622719}
+  m_LocalPosition: {x: 313.7201, y: 24.54, z: 5.622719}
   m_LocalScale: {x: 1, y: -1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3087,7 +3087,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 84244170}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 131.4, y: -7.2, z: 0.63444245}
+  m_LocalPosition: {x: 131.4, y: -7.64, z: 0.63444245}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3184,7 +3184,7 @@ GameObject:
   - component: {fileID: 84543748}
   - component: {fileID: 84543747}
   m_Layer: 0
-  m_Name: Plafond (20)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3590,7 +3590,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 9
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.7075472, g: 0.52398545, b: 0.69829607, a: 1}
   m_FlipX: 0
@@ -3610,7 +3610,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 91300243}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 89.03, y: -6.02, z: 12.374779}
+  m_LocalPosition: {x: 89.03, y: -6.2443995, z: 12.374779}
   m_LocalScale: {x: 0.37109995, y: 5.7277894, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3909,7 +3909,7 @@ GameObject:
   - component: {fileID: 96829586}
   - component: {fileID: 96829585}
   m_Layer: 0
-  m_Name: Plafond (27)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3963,7 +3963,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 96829583}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -4515,7 +4515,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 113531192}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -4824,7 +4824,7 @@ GameObject:
   - component: {fileID: 120893015}
   - component: {fileID: 120893016}
   m_Layer: 0
-  m_Name: Plafond (10)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5364,7 +5364,7 @@ GameObject:
   - component: {fileID: 140659465}
   - component: {fileID: 140659467}
   - component: {fileID: 140659466}
-  m_Layer: 13
+  m_Layer: 2
   m_Name: Trigger_NoY_To_MainFollow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5457,7 +5457,7 @@ Transform:
   m_Children:
   - {fileID: 1228777141}
   m_Father: {fileID: 720497469}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &144149751
 MonoBehaviour:
@@ -5704,7 +5704,7 @@ GameObject:
   - component: {fileID: 149903813}
   - component: {fileID: 149903814}
   m_Layer: 0
-  m_Name: Plafond (1)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6177,7 +6177,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 164254799}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -6631,7 +6631,7 @@ GameObject:
   - component: {fileID: 174765970}
   - component: {fileID: 174765969}
   m_Layer: 0
-  m_Name: Plafond (33)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6645,7 +6645,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 174765967}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 337.08984, y: 23.31482, z: 2.358225}
+  m_LocalPosition: {x: 322.73987, y: 23.31482, z: 2.358225}
   m_LocalScale: {x: 12.099999, y: 0.6125, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6685,7 +6685,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 174765967}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -6778,7 +6778,7 @@ GameObject:
   - component: {fileID: 180988708}
   - component: {fileID: 180988707}
   m_Layer: 0
-  m_Name: Plafond (30)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6792,7 +6792,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 180988705}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 358.46985, y: 23.31482, z: 2.358225}
+  m_LocalPosition: {x: 344.11987, y: 23.31482, z: 2.358225}
   m_LocalScale: {x: 12.099999, y: 0.6125, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6832,7 +6832,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 180988705}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -6986,7 +6986,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 191828266}
   m_LocalRotation: {x: -0, y: -0, z: -0.5, w: 0.8660254}
-  m_LocalPosition: {x: 368.19, y: 25.03, z: 2.3582249}
+  m_LocalPosition: {x: 360.84003, y: 25.03, z: 2.3582249}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8543,7 +8543,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 254517917}
   m_LocalRotation: {x: -0, y: -0, z: -0.49999917, w: 0.8660259}
-  m_LocalPosition: {x: 363.9209, y: -16.6703, z: 2.358225}
+  m_LocalPosition: {x: 349.57092, y: -16.6703, z: 2.358225}
   m_LocalScale: {x: 35.49859, y: 6.0318537, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8583,7 +8583,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 254517917}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -8822,7 +8822,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 260261068}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 216.94, y: 11.2599945, z: 2.358225}
+  m_LocalPosition: {x: 216.63, y: 10.95, z: 2.358225}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8919,7 +8919,7 @@ GameObject:
   - component: {fileID: 262856996}
   - component: {fileID: 262856997}
   m_Layer: 0
-  m_Name: Plafond (4)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9030,7 +9030,7 @@ GameObject:
   - component: {fileID: 263317039}
   - component: {fileID: 263317040}
   m_Layer: 0
-  m_Name: Plafond (2)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9393,7 +9393,7 @@ GameObject:
   - component: {fileID: 276299118}
   - component: {fileID: 276299117}
   m_Layer: 0
-  m_Name: Plafond (19)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9447,7 +9447,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 276299115}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -9840,7 +9840,7 @@ GameObject:
   - component: {fileID: 289136040}
   - component: {fileID: 289136039}
   m_Layer: 0
-  m_Name: Plafond (16)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10461,7 +10461,7 @@ Transform:
   m_Children:
   - {fileID: 1853551086}
   m_Father: {fileID: 720497469}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &307965218
 MonoBehaviour:
@@ -10547,7 +10547,7 @@ GameObject:
   - component: {fileID: 312462188}
   - component: {fileID: 312462187}
   m_Layer: 0
-  m_Name: Plafond (21)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10776,7 +10776,7 @@ GameObject:
   - component: {fileID: 321036162}
   - component: {fileID: 321036163}
   m_Layer: 0
-  m_Name: Plafond (5)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11234,7 +11234,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 336877489}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -11654,7 +11654,7 @@ GameObject:
   - component: {fileID: 357606382}
   - component: {fileID: 357606381}
   m_Layer: 0
-  m_Name: Plafond (16)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11708,7 +11708,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 357606379}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -11764,7 +11764,7 @@ GameObject:
   - component: {fileID: 365484450}
   - component: {fileID: 365484452}
   - component: {fileID: 365484451}
-  m_Layer: 13
+  m_Layer: 2
   m_Name: Trigger_NoYLarger_To_Focused_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12259,7 +12259,7 @@ GameObject:
   - component: {fileID: 379725420}
   - component: {fileID: 379725419}
   - component: {fileID: 379725422}
-  m_Layer: 13
+  m_Layer: 2
   m_Name: Trigger_MainFollow_To_NoY
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12610,7 +12610,7 @@ GameObject:
   - component: {fileID: 384852265}
   - component: {fileID: 384852267}
   - component: {fileID: 384852266}
-  m_Layer: 13
+  m_Layer: 2
   m_Name: Trigger_MainFollow_To_Focused_02 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12977,7 +12977,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5484190042549327233, guid: 8569d3fcc1521c4478d4bd6f16abf9c3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -36.18
+      value: -29.18
       objectReference: {fileID: 0}
     - target: {fileID: 5484190042549327233, guid: 8569d3fcc1521c4478d4bd6f16abf9c3, type: 3}
       propertyPath: m_LocalPosition.y
@@ -13047,7 +13047,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 404463825}
   m_LocalRotation: {x: -0, y: -0, z: -0.5, w: 0.8660254}
-  m_LocalPosition: {x: 359.08, y: -11.31, z: 2.3582249}
+  m_LocalPosition: {x: 351.73, y: -11.31, z: 2.3582249}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13340,7 +13340,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 409322495}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -13437,7 +13437,7 @@ GameObject:
   - component: {fileID: 412150814}
   - component: {fileID: 412150813}
   m_Layer: 0
-  m_Name: Plafond (15)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13491,7 +13491,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 412150811}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -13889,7 +13889,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 430848579}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -14156,8 +14156,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 437809842}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -21.418835, y: 13.581494, z: 3.0074139}
-  m_LocalScale: {x: 29.345, y: -5, z: 1}
+  m_LocalPosition: {x: -25.0969, y: 13.581494, z: 3.0074139}
+  m_LocalScale: {x: 28.960579, y: -5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1802401714}
@@ -14210,6 +14210,119 @@ SpriteRenderer:
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 19.2, y: 2.27}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &438006082
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 438006083}
+  - component: {fileID: 438006085}
+  - component: {fileID: 438006084}
+  m_Layer: 0
+  m_Name: sol (15)
+  m_TagString: Floor
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &438006083
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438006082}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -38.08104, y: 3.921, z: 5.622719}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 548876487}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &438006084
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438006082}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 1.440561, y: 1.52}
+  - {x: -0.053743362, y: 1.5107019}
+  - {x: -0.5052662, y: 1.3119944}
+  - {x: -0.88288116, y: 1.0012828}
+  - {x: -1.1469421, y: 0.58994794}
+  - {x: -1.28, y: 0.0761714}
+  - {x: -1.28, y: -1.5256674}
+  - {x: 1.44061, y: -1.53}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!212 &438006085
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438006082}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 6
+  m_Sprite: {fileID: 21300000, guid: 24b6f4bca8eeedd4bab6d07cf65c9794, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -14813,7 +14926,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 468928070}
   m_LocalRotation: {x: -0, y: -0, z: -0.5, w: 0.8660254}
-  m_LocalPosition: {x: 380.22, y: 9.87, z: 2.3582249}
+  m_LocalPosition: {x: 372.87003, y: 9.87, z: 2.3582249}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14917,7 +15030,7 @@ GameObject:
   - component: {fileID: 479952027}
   - component: {fileID: 479952026}
   m_Layer: 0
-  m_Name: Plafond (13)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15731,7 +15844,7 @@ GameObject:
   - component: {fileID: 510562899}
   - component: {fileID: 510562898}
   m_Layer: 0
-  m_Name: Plafond (7)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15785,7 +15898,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 510562896}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -16303,7 +16416,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 525408873}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.21, y: -0.2, z: 1.5882367}
+  m_LocalPosition: {x: -4.44, y: -1.4, z: 1.5882367}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16405,7 +16518,7 @@ GameObject:
   - component: {fileID: 532130884}
   - component: {fileID: 532130883}
   m_Layer: 0
-  m_Name: Plafond (35)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16459,7 +16572,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 532130881}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -16684,7 +16797,7 @@ GameObject:
   - component: {fileID: 536347713}
   - component: {fileID: 536347714}
   m_Layer: 0
-  m_Name: Plafond (6)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16919,7 +17032,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 542303117}
   m_LocalRotation: {x: -0, y: -0, z: -0.5, w: 0.8660254}
-  m_LocalPosition: {x: 384.6499, y: -9.710022, z: 2.3582249}
+  m_LocalPosition: {x: 377.29993, y: -9.710022, z: 2.3582249}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17105,6 +17218,8 @@ Transform:
   - {fileID: 1290406051}
   - {fileID: 446931162}
   - {fileID: 979729579}
+  - {fileID: 438006083}
+  - {fileID: 975839276}
   m_Father: {fileID: 798950604}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -17456,7 +17571,7 @@ GameObject:
   - component: {fileID: 560769503}
   - component: {fileID: 560769502}
   m_Layer: 0
-  m_Name: Plafond (36)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17510,7 +17625,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 560769500}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -17621,7 +17736,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 563007848}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -18214,7 +18329,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 582948562}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -18957,7 +19072,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 596229043}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 161.1, y: 1.3299973, z: 0.63444245}
+  m_LocalPosition: {x: 161.1, y: 0.84, z: 0.63444245}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19151,7 +19266,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 606440377}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 314.26016, y: 27.730019, z: 5.622719}
+  m_LocalPosition: {x: 313.72025, y: 27.730019, z: 5.622719}
   m_LocalScale: {x: 1, y: -1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19726,7 +19841,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 622198122}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 165, y: 8.83, z: 0.63444245}
+  m_LocalPosition: {x: 165, y: 8.01, z: 0.63444245}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20214,7 +20329,7 @@ GameObject:
   - component: {fileID: 639979123}
   - component: {fileID: 639979122}
   m_Layer: 0
-  m_Name: Plafond (9)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20606,7 +20721,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 644333300}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -20747,7 +20862,7 @@ GameObject:
   - component: {fileID: 649278509}
   - component: {fileID: 649278508}
   m_Layer: 0
-  m_Name: Plafond (20)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20925,6 +21040,167 @@ SpriteRenderer:
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 19.2, y: 3.2}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &650721740
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 650721741}
+  - component: {fileID: 650721746}
+  - component: {fileID: 650721745}
+  - component: {fileID: 650721744}
+  - component: {fileID: 650721743}
+  - component: {fileID: 650721742}
+  m_Layer: 0
+  m_Name: BAT (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &650721741
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650721740}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 104.6, y: 11.22, z: 1.5882367}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1034517514}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &650721742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650721740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fb82cc4e51f8794c834237b98d172cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealthRef: {fileID: 834121211}
+--- !u!114 &650721743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650721740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 265e38052334a864f80b04022ea25c67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isChasing: 0
+  isDone: 1
+  onCD: 1
+  BatPos: {x: 0, y: 0, z: 0}
+  BatLandingPos: {x: 0, y: 0, z: 0}
+  PlayerPos: {x: 0, y: 0, z: 0}
+  PotentialPlayerPosExt: {x: 0, y: 0, z: 0}
+  PotentialPlayerPosInt: {x: 0, y: 0, z: 0}
+  OffsetPotentialPlayerPos: {x: 0, y: 0, z: 0}
+  BatToPlayer: {x: 0, y: 0, z: 0}
+  PlayerToPotPlayer: {x: 0, y: 0, z: 0}
+--- !u!70 &650721744
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650721740}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.049610138, y: -0.03590536}
+  m_Size: {x: 1.324089, y: 3.0981894}
+  m_Direction: 0
+--- !u!50 &650721745
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650721740}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: -3
+  m_Material: {fileID: 6200000, guid: 6e4a05a700fb24e4cbb211b2bb55ddb1, type: 2}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 5
+--- !u!212 &650721746
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650721740}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 884c2de8c366bea47bf99d472652c563, type: 3}
+  m_Color: {r: 1, g: 0, b: 0.8248067, a: 1}
+  m_FlipX: 1
+  m_FlipY: 1
+  m_DrawMode: 0
+  m_Size: {x: 3.09, y: 3.17}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -21190,8 +21466,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 659389715}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -21.418823, y: 20.4, z: 3.0074139}
-  m_LocalScale: {x: 29.345, y: 1, z: 1}
+  m_LocalPosition: {x: -25.0969, y: 20.4, z: 3.0074139}
+  m_LocalScale: {x: 28.960579, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1802401714}
@@ -21385,7 +21661,7 @@ GameObject:
   - component: {fileID: 665899013}
   - component: {fileID: 665899014}
   m_Layer: 0
-  m_Name: Plafond (13)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21496,7 +21772,7 @@ GameObject:
   - component: {fileID: 670874084}
   - component: {fileID: 670874083}
   m_Layer: 0
-  m_Name: Plafond (28)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21550,7 +21826,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 670874081}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -21691,7 +21967,7 @@ GameObject:
   - component: {fileID: 671405277}
   - component: {fileID: 671405276}
   m_Layer: 0
-  m_Name: Plafond (18)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21802,7 +22078,7 @@ GameObject:
   - component: {fileID: 674232035}
   - component: {fileID: 674232034}
   m_Layer: 0
-  m_Name: Plafond (25)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21856,7 +22132,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 674232032}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -21912,7 +22188,7 @@ GameObject:
   - component: {fileID: 674933705}
   - component: {fileID: 674933707}
   - component: {fileID: 674933706}
-  m_Layer: 13
+  m_Layer: 2
   m_Name: Trigger_MainFollow_To_Focused_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22124,7 +22400,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 677967150}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -22840,7 +23116,7 @@ GameObject:
   - component: {fileID: 711506725}
   - component: {fileID: 711506724}
   m_Layer: 0
-  m_Name: Plafond (5)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22894,7 +23170,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 711506722}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -23089,6 +23365,7 @@ Transform:
   - {fileID: 769889766}
   - {fileID: 1583394491}
   - {fileID: 1984417760}
+  - {fileID: 1204505741}
   - {fileID: 2004869933}
   - {fileID: 1110627562}
   - {fileID: 307965217}
@@ -23112,6 +23389,7 @@ MonoBehaviour:
   - {fileID: 769889767}
   - {fileID: 1583394492}
   - {fileID: 1984417761}
+  - {fileID: 1204505742}
   - {fileID: 2004869934}
   - {fileID: 1110627563}
   - {fileID: 307965218}
@@ -23297,7 +23575,7 @@ GameObject:
   - component: {fileID: 723899984}
   - component: {fileID: 723899983}
   m_Layer: 0
-  m_Name: Plafond (21)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23466,7 +23744,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 731948896}
   m_LocalRotation: {x: -0, y: -0, z: -0.5, w: 0.8660254}
-  m_LocalPosition: {x: 387.3999, y: -8.100021, z: 2.3582249}
+  m_LocalPosition: {x: 380.04993, y: -8.100021, z: 2.3582249}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -23811,7 +24089,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 755835465}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 155.95, y: 24.69, z: 2.3582249}
+  m_LocalPosition: {x: 159.3, y: 24.69, z: 2.3582249}
   m_LocalScale: {x: 0.65, y: 0.65, z: 0.65}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -24085,7 +24363,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 762939659}
   m_LocalRotation: {x: -0, y: -0, z: -0.70710576, w: 0.70710784}
-  m_LocalPosition: {x: 321.76, y: -9.84, z: 5.622719}
+  m_LocalPosition: {x: 314.41003, y: -9.84, z: 5.622719}
   m_LocalScale: {x: 0.65, y: -1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -25067,7 +25345,7 @@ GameObject:
   - component: {fileID: 790169826}
   - component: {fileID: 790169825}
   m_Layer: 0
-  m_Name: Plafond (22)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25121,7 +25399,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 790169823}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -25190,7 +25468,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 792817606}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 82.96217, y: -4.4145155, z: -0.09651375}
+  m_LocalPosition: {x: 84.4, y: -4.4145155, z: -0.09651375}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -25209,7 +25487,7 @@ GameObject:
   - component: {fileID: 794191941}
   - component: {fileID: 794191940}
   m_Layer: 0
-  m_Name: Plafond (8)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25334,7 +25612,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 794358300}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 205.16998, y: 6.869995, z: 2.358225}
+  m_LocalPosition: {x: 205.16998, y: 6.64, z: 2.358225}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -25588,7 +25866,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 803385305}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 371.84, y: 27.730019, z: 5.622719}
+  m_LocalPosition: {x: 371.30008, y: 27.730019, z: 5.622719}
   m_LocalScale: {x: 1, y: -1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -26449,8 +26727,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 834625789}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 64.399994, y: 11.22, z: 1.5882367}
-  m_LocalScale: {x: 0.65, y: 0.65, z: 0.65}
+  m_LocalPosition: {x: 71.16, y: 11.22, z: 1.5882367}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1034517514}
@@ -26629,7 +26907,7 @@ GameObject:
   - component: {fileID: 839569592}
   - component: {fileID: 839569591}
   m_Layer: 0
-  m_Name: Plafond (15)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26753,7 +27031,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 842944831}
   m_LocalRotation: {x: -0, y: -0, z: -0.5, w: 0.8660254}
-  m_LocalPosition: {x: 377.81995, y: 8.489975, z: 2.3582249}
+  m_LocalPosition: {x: 370.46997, y: 8.489975, z: 2.3582249}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -27012,7 +27290,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 855466641}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -27237,7 +27515,7 @@ GameObject:
   - component: {fileID: 860014097}
   - component: {fileID: 860014096}
   m_Layer: 0
-  m_Name: Plafond (15)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27640,7 +27918,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 863774211}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 352.65994, y: 24.54, z: 5.622719}
+  m_LocalPosition: {x: 352.12003, y: 24.54, z: 5.622719}
   m_LocalScale: {x: 1, y: -1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -27980,7 +28258,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 882793001}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 217.51, y: 24.63, z: 2.3582249}
+  m_LocalPosition: {x: 223.44, y: 24.63, z: 2.3582249}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -28292,7 +28570,7 @@ GameObject:
   - component: {fileID: 895416558}
   - component: {fileID: 895416557}
   - component: {fileID: 895416559}
-  m_Layer: 13
+  m_Layer: 2
   m_Name: Trigger_Focused_02_To_NoY
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28647,7 +28925,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 904236127}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 345.06995, y: 1.2499847, z: 2.3582249}
+  m_LocalPosition: {x: 337.71997, y: 1.2499847, z: 2.3582249}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -29517,7 +29795,7 @@ GameObject:
   - component: {fileID: 929669625}
   - component: {fileID: 929669624}
   m_Layer: 0
-  m_Name: Plafond (11)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29844,7 +30122,7 @@ GameObject:
   - component: {fileID: 939732002}
   - component: {fileID: 939732004}
   - component: {fileID: 939732003}
-  m_Layer: 13
+  m_Layer: 2
   m_Name: Trigger_Focused_01_To_MainFollow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29859,7 +30137,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 939732001}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -36.3, y: -0.7, z: 0.07167053}
+  m_LocalPosition: {x: -40.8, y: -0.7, z: 0.07167053}
   m_LocalScale: {x: 1, y: 2.15, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -29918,7 +30196,7 @@ GameObject:
   - component: {fileID: 943796228}
   - component: {fileID: 943796227}
   m_Layer: 0
-  m_Name: Plafond (10)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30126,7 +30404,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 951848973}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 331.0193, y: 0.82, z: 5.622719}
+  m_LocalPosition: {x: 323.6693, y: 0.82, z: 5.622719}
   m_LocalScale: {x: 1.0937849, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -30546,7 +30824,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 960750902}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 871.06, y: -16.99, z: 0}
+  m_LocalPosition: {x: 863.71, y: -16.99, z: 0}
   m_LocalScale: {x: 5.875, y: 5.0125, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -30677,7 +30955,7 @@ GameObject:
   - component: {fileID: 964107663}
   - component: {fileID: 964107659}
   m_Layer: 0
-  m_Name: CHECKPOINT_MAIN_03
+  m_Name: CHECKPOINT_MAIN_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30731,7 +31009,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 964107658}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -30789,7 +31067,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1956832225}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &964107663
 MonoBehaviour:
@@ -30817,7 +31095,7 @@ GameObject:
   - component: {fileID: 967352948}
   - component: {fileID: 967352947}
   m_Layer: 0
-  m_Name: Plafond (25)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31402,7 +31680,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 974134791}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -31505,7 +31783,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 974968965}
   m_LocalRotation: {x: -0, y: -0, z: -0.5, w: 0.8660254}
-  m_LocalPosition: {x: 375.8872, y: 5.3187, z: 2.358225}
+  m_LocalPosition: {x: 361.53723, y: 5.3187, z: 2.358225}
   m_LocalScale: {x: 49.93617, y: 3.0050464, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -31545,7 +31823,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 974968965}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -31580,6 +31858,119 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &975839275
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 975839276}
+  - component: {fileID: 975839278}
+  - component: {fileID: 975839277}
+  m_Layer: 0
+  m_Name: sol (16)
+  m_TagString: Floor
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &975839276
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975839275}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -35.2, y: 3.9210052, z: 5.622719}
+  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 548876487}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &975839277
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975839275}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 1.440561, y: 1.52}
+  - {x: -0.053743362, y: 1.5107019}
+  - {x: -0.5052662, y: 1.3119944}
+  - {x: -0.88288116, y: 1.0012828}
+  - {x: -1.1469421, y: 0.58994794}
+  - {x: -1.28, y: 0.0761714}
+  - {x: -1.28, y: -1.5256674}
+  - {x: 1.44061, y: -1.53}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!212 &975839278
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975839275}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 6
+  m_Sprite: {fileID: 21300000, guid: 24b6f4bca8eeedd4bab6d07cf65c9794, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -31869,7 +32260,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 982016902}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -32038,7 +32429,7 @@ GameObject:
   - component: {fileID: 984336166}
   - component: {fileID: 984336168}
   - component: {fileID: 984336167}
-  m_Layer: 13
+  m_Layer: 2
   m_Name: Trigger_Focused_04_To_MainFollow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32196,7 +32587,7 @@ GameObject:
   - component: {fileID: 987991420}
   - component: {fileID: 987991419}
   m_Layer: 0
-  m_Name: Plafond (14)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32250,7 +32641,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 987991417}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -32516,7 +32907,7 @@ GameObject:
   - component: {fileID: 998415193}
   - component: {fileID: 998415192}
   m_Layer: 0
-  m_Name: Plafond (4)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32744,7 +33135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ad980451443d70438faac0bc6c235a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TrackedObjectOffset: {x: 0, y: 0, z: 0}
+  m_TrackedObjectOffset: {x: -6.800003, y: 0, z: 0}
   m_LookaheadTime: 0
   m_LookaheadSmoothing: 0
   m_LookaheadIgnoreY: 0
@@ -32967,7 +33358,7 @@ GameObject:
   - component: {fileID: 1002540872}
   - component: {fileID: 1002540871}
   m_Layer: 0
-  m_Name: Plafond (18)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33078,7 +33469,7 @@ GameObject:
   - component: {fileID: 1011561133}
   - component: {fileID: 1011561132}
   m_Layer: 0
-  m_Name: Plafond (17)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33132,7 +33523,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1011561130}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -33189,7 +33580,7 @@ GameObject:
   - component: {fileID: 1017536557}
   - component: {fileID: 1017536556}
   m_Layer: 0
-  m_Name: Plafond (14)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33581,7 +33972,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1029872849}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 330.13998, y: -2.350006, z: 5.622719}
+  m_LocalPosition: {x: 322.79, y: -2.350006, z: 5.622719}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -33664,7 +34055,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1030153992}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 826.9, y: 14.81, z: -0.09651375}
+  m_LocalPosition: {x: 833.9, y: 14.81, z: -0.09651375}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -33892,7 +34283,7 @@ GameObject:
   - component: {fileID: 1033653210}
   - component: {fileID: 1033653211}
   m_Layer: 0
-  m_Name: Plafond (7)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34021,6 +34412,7 @@ Transform:
   m_Children:
   - {fileID: 1860648033}
   - {fileID: 834625790}
+  - {fileID: 650721741}
   m_Father: {fileID: 2040364798}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -34444,7 +34836,7 @@ GameObject:
   - component: {fileID: 1045672401}
   - component: {fileID: 1045672400}
   m_Layer: 0
-  m_Name: Plafond (17)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34837,7 +35229,7 @@ GameObject:
   - component: {fileID: 1054347024}
   - component: {fileID: 1054347023}
   m_Layer: 0
-  m_Name: Plafond (8)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34962,7 +35354,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1058006898}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 337.3834, y: -0.4741, z: 2.358225}
+  m_LocalPosition: {x: 323.03342, y: -0.4741, z: 2.358225}
   m_LocalScale: {x: 33.897644, y: 5.7208114, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -35002,7 +35394,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1058006898}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -35502,6 +35894,94 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1084903726
+GameObject:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1084903727}
+  - component: {fileID: 1084903729}
+  - component: {fileID: 1084903728}
+  m_Layer: 0
+  m_Name: cm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1084903727
+Transform:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084903726}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -14.681852, y: -4.904541, z: 102.08588}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1204505741}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1084903728
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084903726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ad980451443d70438faac0bc6c235a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjectOffset: {x: 1, y: 0, z: 0}
+  m_LookaheadTime: 0.05
+  m_LookaheadSmoothing: 1
+  m_LookaheadIgnoreY: 1
+  m_XDamping: 0.75
+  m_YDamping: 2
+  m_ZDamping: 0
+  m_TargetMovementOnly: 1
+  m_ScreenX: 0.5
+  m_ScreenY: 0.65
+  m_CameraDistance: 10
+  m_DeadZoneWidth: 0
+  m_DeadZoneHeight: 2
+  m_DeadZoneDepth: 0
+  m_UnlimitedSoftZone: 0
+  m_SoftZoneWidth: 0.2
+  m_SoftZoneHeight: 2
+  m_BiasX: 0
+  m_BiasY: 0
+  m_CenterOnActivate: 1
+  m_GroupFramingMode: 2
+  m_AdjustmentMode: 0
+  m_GroupFramingSize: 0.8
+  m_MaxDollyIn: 5000
+  m_MaxDollyOut: 5000
+  m_MinimumDistance: 1
+  m_MaximumDistance: 5000
+  m_MinimumFOV: 3
+  m_MaximumFOV: 60
+  m_MinimumOrthoSize: 1
+  m_MaximumOrthoSize: 5000
+--- !u!114 &1084903729
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084903726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1086041318
 GameObject:
   m_ObjectHideFlags: 0
@@ -36484,7 +36964,7 @@ Transform:
   m_Children:
   - {fileID: 1315338417}
   m_Father: {fileID: 720497469}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1110627563
 MonoBehaviour:
@@ -36630,7 +37110,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1111524808}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -37396,7 +37876,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1125099412}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -37453,7 +37933,7 @@ GameObject:
   - component: {fileID: 1127634332}
   - component: {fileID: 1127634331}
   m_Layer: 0
-  m_Name: Plafond (23)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37507,7 +37987,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1127634329}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -37944,7 +38424,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1135767994}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 182.54, y: 24.63, z: 2.3582249}
+  m_LocalPosition: {x: 188.04, y: 24.63, z: 2.3582249}
   m_LocalScale: {x: 0.65, y: 0.65, z: 0.65}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -38424,7 +38904,7 @@ GameObject:
   - component: {fileID: 1152161331}
   - component: {fileID: 1152161330}
   m_Layer: 0
-  m_Name: Plafond (17)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38535,7 +39015,7 @@ GameObject:
   - component: {fileID: 1153728308}
   - component: {fileID: 1153728307}
   m_Layer: 0
-  m_Name: Plafond (7)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39554,7 +40034,7 @@ GameObject:
   - component: {fileID: 1172063370}
   - component: {fileID: 1172063369}
   m_Layer: 0
-  m_Name: Plafond (5)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39759,7 +40239,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 9
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.7075472, g: 0.52398545, b: 0.69829607, a: 1}
   m_FlipX: 0
@@ -39779,7 +40259,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1176537087}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -49.27, y: -4.9, z: 4.467765}
+  m_LocalPosition: {x: -49.27, y: -5.13349, z: 4.467765}
   m_LocalScale: {x: 0.37109992, y: 5.727789, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -39947,7 +40427,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1193801175}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -17.28, y: -4.83, z: 1.5882367}
+  m_LocalPosition: {x: -17.28, y: -5.05, z: 1.5882367}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -40227,6 +40707,77 @@ Transform:
   m_Father: {fileID: 463378878}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!1 &1204505740
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1204505741}
+  - component: {fileID: 1204505742}
+  m_Layer: 0
+  m_Name: CM_Follow_Player_NoY_LargerLarger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1204505741
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204505740}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 256.84, y: 10.879999, z: -16.322622}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1084903727}
+  m_Father: {fileID: 720497469}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1204505742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204505740}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ExcludedPropertiesInInspector:
+  - m_Script
+  m_LockStageInInspector: 
+  m_StreamingVersion: 20170927
+  m_Priority: 10
+  m_StandbyUpdate: 2
+  m_LookAt: {fileID: 0}
+  m_Follow: {fileID: 1297365659}
+  m_Lens:
+    FieldOfView: 65.582565
+    OrthographicSize: 14.5
+    NearClipPlane: 0.3
+    FarClipPlane: 1000
+    Dutch: 0
+    ModeOverride: 0
+    LensShift: {x: 0, y: 0}
+    GateFit: 2
+    m_SensorSize: {x: 1, y: 1}
+  m_Transitions:
+    m_BlendHint: 0
+    m_InheritPosition: 0
+    m_OnCameraLive:
+      m_PersistentCalls:
+        m_Calls: []
+  m_LegacyBlendHint: 0
+  m_ComponentOwner: {fileID: 1084903727}
 --- !u!1 &1206820135
 GameObject:
   m_ObjectHideFlags: 0
@@ -40929,7 +41480,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1222308813}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 371.83987, y: 24.54, z: 5.622719}
+  m_LocalPosition: {x: 371.29996, y: 24.54, z: 5.622719}
   m_LocalScale: {x: 1, y: -1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -41437,7 +41988,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1229592970}
   m_LocalRotation: {x: -0, y: -0, z: -0.5, w: 0.8660254}
-  m_LocalPosition: {x: 370.64, y: 26.44, z: 2.3582249}
+  m_LocalPosition: {x: 363.29004, y: 26.44, z: 2.3582249}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -41562,7 +42113,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1231218936}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -41982,7 +42533,7 @@ GameObject:
   - component: {fileID: 1236829314}
   - component: {fileID: 1236829313}
   m_Layer: 0
-  m_Name: Plafond (24)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42466,7 +43017,7 @@ GameObject:
   - component: {fileID: 1241054853}
   - component: {fileID: 1241054852}
   m_Layer: 0
-  m_Name: Plafond (37)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42520,7 +43071,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1241054850}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -43189,7 +43740,7 @@ GameObject:
   - component: {fileID: 1272593963}
   - component: {fileID: 1272593962}
   m_Layer: 0
-  m_Name: Plafond (11)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43243,7 +43794,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1272593960}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -43483,7 +44034,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1287748796}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -9.02, y: -26.49, z: 0.7478411}
+  m_LocalPosition: {x: -9.02, y: -27.109999, z: 0.7478411}
   m_LocalScale: {x: 0.37109995, y: 5.7277875, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -43577,7 +44128,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 9
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.7075472, g: 0.52398545, b: 0.69829607, a: 1}
   m_FlipX: 0
@@ -43655,7 +44206,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1288856148}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -44091,7 +44642,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1293804458}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 152.8, y: -2.7700028, z: 0.63444245}
+  m_LocalPosition: {x: 152.8, y: -3.1, z: 0.63444245}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -44301,7 +44852,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1301366318}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -44442,7 +44993,7 @@ GameObject:
   - component: {fileID: 1304268221}
   - component: {fileID: 1304268220}
   m_Layer: 0
-  m_Name: Plafond (27)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44456,7 +45007,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1304268218}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 348.78992, y: 23.31482, z: 2.358225}
+  m_LocalPosition: {x: 334.43994, y: 23.31482, z: 2.358225}
   m_LocalScale: {x: 12.099999, y: 0.6125, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -44496,7 +45047,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1304268218}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -44996,7 +45547,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1318110218}
   m_LocalRotation: {x: -0, y: -0, z: -0.5, w: 0.8660254}
-  m_LocalPosition: {x: 361.98993, y: -16.360016, z: 2.3582249}
+  m_LocalPosition: {x: 354.63995, y: -16.360016, z: 2.3582249}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -45205,7 +45756,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1322851303}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -45514,7 +46065,7 @@ GameObject:
   - component: {fileID: 1343488538}
   - component: {fileID: 1343488537}
   m_Layer: 0
-  m_Name: Plafond
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45625,7 +46176,7 @@ GameObject:
   - component: {fileID: 1346058305}
   - component: {fileID: 1346058306}
   m_Layer: 0
-  m_Name: Plafond (12)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46061,7 +46612,7 @@ GameObject:
   - component: {fileID: 1354224115}
   - component: {fileID: 1354224116}
   m_Layer: 0
-  m_Name: Plafond (3)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46186,7 +46737,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1354994516}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 186.83002, y: 15.350006, z: 2.358225}
+  m_LocalPosition: {x: 186.83002, y: 15.1, z: 2.358225}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -46770,7 +47321,7 @@ GameObject:
   - component: {fileID: 1392659550}
   - component: {fileID: 1392659549}
   m_Layer: 0
-  m_Name: Plafond (12)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46916,7 +47467,7 @@ GameObject:
   - component: {fileID: 1400706085}
   - component: {fileID: 1400706084}
   - component: {fileID: 1400706083}
-  m_Layer: 13
+  m_Layer: 2
   m_Name: Trigger_NoY_ToNoYLarger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47233,7 +47784,7 @@ GameObject:
   - component: {fileID: 1407537377}
   - component: {fileID: 1407537376}
   - component: {fileID: 1407537375}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cursor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47722,7 +48273,7 @@ GameObject:
   - component: {fileID: 1421210495}
   - component: {fileID: 1421210494}
   m_Layer: 0
-  m_Name: Plafond (10)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47776,7 +48327,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1421210492}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -48139,7 +48690,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1429088513}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -48743,7 +49294,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1450658756}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 333.4601, y: 27.730019, z: 5.622719}
+  m_LocalPosition: {x: 332.9202, y: 27.730019, z: 5.622719}
   m_LocalScale: {x: 1, y: -1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -48898,7 +49449,7 @@ GameObject:
   - component: {fileID: 1458478778}
   - component: {fileID: 1458478777}
   m_Layer: 0
-  m_Name: Plafond (26)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48912,7 +49463,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1458478775}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 324.96985, y: 23.31482, z: 2.358225}
+  m_LocalPosition: {x: 310.61987, y: 23.31482, z: 2.358225}
   m_LocalScale: {x: 12.099999, y: 0.6125, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -48952,7 +49503,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1458478775}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -49210,7 +49761,7 @@ GameObject:
   - component: {fileID: 1466064381}
   - component: {fileID: 1466064380}
   m_Layer: 0
-  m_Name: Plafond (22)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49375,7 +49926,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1473432137}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -49654,7 +50205,7 @@ GameObject:
   - component: {fileID: 1493449067}
   - component: {fileID: 1493449066}
   m_Layer: 0
-  m_Name: Plafond (25)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49668,7 +50219,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1493449064}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 313.08984, y: 23.31482, z: 2.358225}
+  m_LocalPosition: {x: 298.73987, y: 23.31482, z: 2.358225}
   m_LocalScale: {x: 12.099999, y: 0.6125, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -49708,7 +50259,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1493449064}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -49863,7 +50414,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1495937801}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 178.81, y: 10.710007, z: 2.358225}
+  m_LocalPosition: {x: 178.81, y: 10.4, z: 2.358225}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -50142,7 +50693,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1523308670}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 21.329998, y: -6.89, z: 0.63444245}
+  m_LocalPosition: {x: 21.329998, y: -7.3, z: 0.63444245}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -50323,7 +50874,7 @@ GameObject:
   - component: {fileID: 1535476043}
   - component: {fileID: 1535476042}
   m_Layer: 0
-  m_Name: Plafond (12)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50377,7 +50928,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1535476040}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -50813,7 +51364,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1555811259}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -50884,7 +51435,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1556638836}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 320.46985, y: 0.6370239, z: 2.358225}
+  m_LocalPosition: {x: 306.11987, y: 0.6370239, z: 2.358225}
   m_LocalScale: {x: 0.6125, y: 3.47875, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -50924,7 +51475,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1556638836}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -51031,7 +51582,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 52971400229585016, guid: 84a638122c367ea49b686b6e658e148d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.18103027
+      value: -7.1689453
       objectReference: {fileID: 0}
     - target: {fileID: 52971400229585016, guid: 84a638122c367ea49b686b6e658e148d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -51159,6 +51710,148 @@ SpriteRenderer:
   m_FlipY: 1
   m_DrawMode: 0
   m_Size: {x: 19.2, y: 3.2}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &1564647441
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1564647442}
+  - component: {fileID: 1564647446}
+  - component: {fileID: 1564647445}
+  - component: {fileID: 1564647444}
+  - component: {fileID: 1564647443}
+  m_Layer: 0
+  m_Name: CHECKPOINT_MAIN_03
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1564647442
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564647441}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -135.2, y: -22.56105, z: 0.3513174}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1956832225}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1564647443
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564647441}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 14.71756}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.26, y: 4.46}
+    newSize: {x: 2.26, y: 4.46}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.26, y: 35.61801}
+  m_EdgeRadius: 0
+--- !u!114 &1564647444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564647441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6e69abe0a94e3d43a39406c2414962d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NoY_Point: {fileID: 1297365658}
+  NoY_Height: -14.67852
+--- !u!114 &1564647445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564647441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90f938e8ea7643449a125107aa83b46e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnManager: {fileID: 834121210}
+  CheckPointManager: {fileID: 1772669816}
+  UsedCameraRef: {fileID: 769889767}
+--- !u!212 &1564647446
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564647441}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 33dbe510268a09d458ccb05ce05a10d8, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.26, y: 4.46}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -52441,7 +53134,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1601476558}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -52636,7 +53329,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1607572006}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -52706,7 +53399,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1612339435}
   m_LocalRotation: {x: -0, y: -0, z: -0.5, w: 0.8660254}
-  m_LocalPosition: {x: 389.79, y: -6.73, z: 2.3582249}
+  m_LocalPosition: {x: 382.44003, y: -6.73, z: 2.3582249}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -52790,7 +53483,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1613099295}
   m_LocalRotation: {x: -0, y: -0, z: -0.5, w: 0.8660254}
-  m_LocalPosition: {x: 374.1599, y: -31.430023, z: 2.3582249}
+  m_LocalPosition: {x: 366.80994, y: -31.430023, z: 2.3582249}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -52999,7 +53692,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1615845266}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -53562,7 +54255,7 @@ GameObject:
   - component: {fileID: 1637250455}
   - component: {fileID: 1637250451}
   m_Layer: 0
-  m_Name: CHECKPOINT_MAIN_04
+  m_Name: CHECKPOINT_MAIN_05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -53616,7 +54309,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1637250450}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -53674,7 +54367,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1956832225}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1637250455
 MonoBehaviour:
@@ -53702,7 +54395,7 @@ GameObject:
   - component: {fileID: 1637672543}
   - component: {fileID: 1637672542}
   m_Layer: 0
-  m_Name: Plafond (20)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -53756,7 +54449,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1637672540}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -53984,7 +54677,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1641853582}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -54404,7 +55097,7 @@ GameObject:
   - component: {fileID: 1650083821}
   - component: {fileID: 1650083820}
   m_Layer: 0
-  m_Name: Plafond (34)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -54458,7 +55151,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1650083818}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -55374,7 +56067,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1673022289}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -55515,7 +56208,7 @@ GameObject:
   - component: {fileID: 1676877779}
   - component: {fileID: 1676877778}
   m_Layer: 0
-  m_Name: Plafond (27)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56298,7 +56991,7 @@ GameObject:
   - component: {fileID: 1698413813}
   - component: {fileID: 1698413812}
   m_Layer: 0
-  m_Name: Plafond (6)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56352,7 +57045,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1698413810}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -57158,7 +57851,7 @@ GameObject:
   - component: {fileID: 1724339941}
   - component: {fileID: 1724339943}
   - component: {fileID: 1724339942}
-  m_Layer: 13
+  m_Layer: 2
   m_Name: Trigger_MainFollow_To_Focused_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57422,7 +58115,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1729181789}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 56.91, y: 20.53, z: 2.3582249}
+  m_LocalPosition: {x: 59.23, y: 20.53, z: 2.3582249}
   m_LocalScale: {x: 0.65, y: 0.65, z: 0.65}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -57739,7 +58432,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1733159125}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -58522,6 +59215,7 @@ MonoBehaviour:
   NameCheckpointTab:
   - {fileID: 164254799}
   - {fileID: 982016902}
+  - {fileID: 1564647441}
   - {fileID: 964107658}
   - {fileID: 1637250450}
   - {fileID: 1925829833}
@@ -58618,7 +59312,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1773722429}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -58912,7 +59606,7 @@ GameObject:
   - component: {fileID: 1792963000}
   - component: {fileID: 1792962999}
   m_Layer: 0
-  m_Name: Plafond (24)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -58966,7 +59660,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1792962997}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -59782,7 +60476,7 @@ GameObject:
   - component: {fileID: 1807016486}
   - component: {fileID: 1807016485}
   m_Layer: 0
-  m_Name: Plafond (26)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -60158,7 +60852,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1817296368}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 333.46, y: 24.54, z: 5.622719}
+  m_LocalPosition: {x: 332.92007, y: 24.54, z: 5.622719}
   m_LocalScale: {x: 1, y: -1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -61334,7 +62028,7 @@ GameObject:
   - component: {fileID: 1849690690}
   - component: {fileID: 1849690689}
   - component: {fileID: 1849690688}
-  m_Layer: 13
+  m_Layer: 2
   m_Name: Trigger_NoY_To_NoYLarger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61435,7 +62129,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1851635060}
   m_LocalRotation: {x: -0, y: -0, z: -0.70710576, w: 0.70710784}
-  m_LocalPosition: {x: 321.76, y: -3.84, z: 5.622719}
+  m_LocalPosition: {x: 314.41003, y: -3.84, z: 5.622719}
   m_LocalScale: {x: 0.65, y: -1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -61829,7 +62523,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1864397488}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -62423,7 +63117,7 @@ GameObject:
   - component: {fileID: 1888822397}
   - component: {fileID: 1888822396}
   - component: {fileID: 1888822395}
-  m_Layer: 13
+  m_Layer: 2
   m_Name: Trigger_NoYLarger_To_NoY
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62932,7 +63626,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9170087186750526819, guid: 65141bc0193f30140b9385c52e9e35ea, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.8099365
+      value: -8.159912
       objectReference: {fileID: 0}
     - target: {fileID: 9170087186750526819, guid: 65141bc0193f30140b9385c52e9e35ea, type: 3}
       propertyPath: m_LocalPosition.y
@@ -63259,7 +63953,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1910929680}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 154.3, y: 5.9299974, z: 0.63444245}
+  m_LocalPosition: {x: 154.3, y: 5.04, z: 0.63444245}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -63494,7 +64188,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1921595339}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -63552,7 +64246,7 @@ GameObject:
   - component: {fileID: 1925829836}
   - component: {fileID: 1925829835}
   m_Layer: 0
-  m_Name: CHECKPOINT_MAIN_05
+  m_Name: CHECKPOINT_MAIN_06
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -63571,7 +64265,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1956832225}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1925829835
 BoxCollider2D:
@@ -63621,7 +64315,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1925829833}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -63732,7 +64426,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1927116223}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -63873,7 +64567,7 @@ GameObject:
   - component: {fileID: 1931970419}
   - component: {fileID: 1931970418}
   m_Layer: 0
-  m_Name: Plafond (9)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -63927,7 +64621,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1931970416}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -64333,7 +65027,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1938455767}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 352.66, y: 27.730019, z: 5.622719}
+  m_LocalPosition: {x: 352.1201, y: 27.730019, z: 5.622719}
   m_LocalScale: {x: 1, y: -1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -64802,8 +65496,8 @@ GameObject:
   - component: {fileID: 1950986701}
   - component: {fileID: 1950986700}
   - component: {fileID: 1950986702}
-  m_Layer: 13
-  m_Name: Trigger_NoYLarger_To_MainFollow
+  m_Layer: 2
+  m_Name: Trigger_NoYLarger_To_NoYLargerLarger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -64837,7 +65531,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraOnLeft: {fileID: 1984417761}
-  cameraOnRight: {fileID: 769889767}
+  cameraOnRight: {fileID: 1204505742}
 --- !u!61 &1950986701
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -64877,7 +65571,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NoY_Point: {fileID: 1297365658}
-  NoY_Height: 12
+  NoY_Height: 12.5
 --- !u!1 &1951044020
 GameObject:
   m_ObjectHideFlags: 0
@@ -64903,7 +65597,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1951044020}
   m_LocalRotation: {x: -0, y: -0, z: -0.5, w: 0.8660254}
-  m_LocalPosition: {x: 371.55994, y: -32.930023, z: 2.3582249}
+  m_LocalPosition: {x: 364.20996, y: -32.930023, z: 2.3582249}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -64987,7 +65681,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1954154314}
   m_LocalRotation: {x: -0, y: -0, z: -0.70710576, w: 0.70710784}
-  m_LocalPosition: {x: 324.94, y: -3.84, z: 5.622719}
+  m_LocalPosition: {x: 317.59003, y: -3.84, z: 5.622719}
   m_LocalScale: {x: 0.65, y: -1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -65076,6 +65770,7 @@ Transform:
   m_Children:
   - {fileID: 164254800}
   - {fileID: 982016906}
+  - {fileID: 1564647442}
   - {fileID: 964107662}
   - {fileID: 1637250454}
   - {fileID: 1925829834}
@@ -65210,7 +65905,7 @@ GameObject:
   - component: {fileID: 1970075268}
   - component: {fileID: 1970075269}
   m_Layer: 0
-  m_Name: Plafond (11)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -65440,7 +66135,7 @@ GameObject:
   - component: {fileID: 1974767251}
   - component: {fileID: 1974767250}
   m_Layer: 0
-  m_Name: Plafond (6)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -65760,7 +66455,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1989275937}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -66126,7 +66821,7 @@ GameObject:
   - component: {fileID: 2001682509}
   - component: {fileID: 2001682508}
   m_Layer: 0
-  m_Name: Plafond (18)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -66180,7 +66875,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2001682506}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -66237,7 +66932,7 @@ GameObject:
   - component: {fileID: 2003611725}
   - component: {fileID: 2003611724}
   - component: {fileID: 2003611723}
-  m_Layer: 13
+  m_Layer: 2
   m_Name: Trigger_Focused_03_ToNoYLarger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -66338,13 +67033,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2004869932}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -40}
+  m_LocalPosition: {x: 77.6, y: -4.4145155, z: -16.322622}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1000867787}
   m_Father: {fileID: 720497469}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2004869934
 MonoBehaviour:
@@ -66458,7 +67153,7 @@ GameObject:
   - component: {fileID: 2006985926}
   - component: {fileID: 2006985925}
   m_Layer: 0
-  m_Name: Plafond (28)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -66791,7 +67486,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2018320378}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -66848,7 +67543,7 @@ GameObject:
   - component: {fileID: 2020978610}
   - component: {fileID: 2020978609}
   m_Layer: 0
-  m_Name: Plafond (24)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -66902,7 +67597,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2020978607}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -67211,7 +67906,7 @@ GameObject:
   - component: {fileID: 2027320109}
   - component: {fileID: 2027320108}
   m_Layer: 0
-  m_Name: Plafond (21)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -67265,7 +67960,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2027320106}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -68443,7 +69138,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2065151160}
   m_LocalRotation: {x: 1, y: -0, z: -0, w: 0}
-  m_LocalPosition: {x: 354.62994, y: 24.039978, z: 2.3582249}
+  m_LocalPosition: {x: 347.27997, y: 24.039978, z: 2.3582249}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -68940,7 +69635,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2084096796}
   m_LocalRotation: {x: -0, y: -0, z: -0.5, w: 0.8660254}
-  m_LocalPosition: {x: 364.5899, y: -14.860016, z: 2.3582249}
+  m_LocalPosition: {x: 357.23993, y: -14.860016, z: 2.3582249}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -69233,7 +69928,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2088424028}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -69458,7 +70153,7 @@ GameObject:
   - component: {fileID: 2108380100}
   - component: {fileID: 2108380099}
   m_Layer: 0
-  m_Name: Plafond (13)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -69512,7 +70207,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2108380097}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -69569,7 +70264,7 @@ GameObject:
   - component: {fileID: 2108996304}
   - component: {fileID: 2108996303}
   m_Layer: 0
-  m_Name: Plafond (23)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -69753,7 +70448,7 @@ GameObject:
   - component: {fileID: 2113025577}
   - component: {fileID: 2113025576}
   m_Layer: 0
-  m_Name: Plafond (26)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -69807,7 +70502,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2113025574}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -69864,7 +70559,7 @@ GameObject:
   - component: {fileID: 2113658173}
   - component: {fileID: 2113658172}
   m_Layer: 0
-  m_Name: Plafond (19)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -70085,7 +70780,7 @@ GameObject:
   - component: {fileID: 2115848103}
   - component: {fileID: 2115848105}
   - component: {fileID: 2115848104}
-  m_Layer: 13
+  m_Layer: 2
   m_Name: Trigger_MainFollow_To_Focused_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70300,7 +70995,7 @@ GameObject:
   - component: {fileID: 2122940646}
   - component: {fileID: 2122940645}
   m_Layer: 0
-  m_Name: Plafond (19)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -70747,7 +71442,7 @@ GameObject:
   - component: {fileID: 2138694704}
   - component: {fileID: 2138694703}
   m_Layer: 0
-  m_Name: Plafond (9)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -70996,7 +71691,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2140059672}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1

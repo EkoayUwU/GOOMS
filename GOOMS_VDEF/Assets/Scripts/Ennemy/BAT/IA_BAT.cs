@@ -48,15 +48,15 @@ public class IA_BAT : MonoBehaviour
 
 
         //cast raycast down pour détecter 1er élément rencontré
-        RaycastHit2D hitLeft = Physics2D.Raycast(transform.position - new Vector3(0, 1.15f, 0), Vector2.down + Vector2.left, 15f);
-        RaycastHit2D hitRight = Physics2D.Raycast(transform.position - new Vector3(0, 1.15f, 0), Vector2.down + Vector2.right, 15f);
+        RaycastHit2D hitLeft = Physics2D.Raycast(transform.position - new Vector3(0, 1.15f, 0), Vector2.down + Vector2.left, 35f, ~6);
+        RaycastHit2D hitRight = Physics2D.Raycast(transform.position - new Vector3(0, 1.15f, 0), Vector2.down + Vector2.right, 35f, ~6);
 
-        Debug.DrawRay(transform.position - new Vector3(0, 1.15f, 0), (Vector2.down + Vector2.left) * 15f, Color.red);
-        Debug.DrawRay(transform.position - new Vector3(0, 1.15f, 0), (Vector2.down + Vector2.right) * 15f, Color.red);
+        Debug.DrawRay(transform.position - new Vector3(0, 1.15f, 0), (Vector2.down + Vector2.left) * 35f, Color.red);
+        Debug.DrawRay(transform.position - new Vector3(0, 1.15f, 0), (Vector2.down + Vector2.right) * 35f, Color.red);
 
-        Debug.Log(hitLeft.collider.name);
+        //Debug.Log(hitLeft.collider.name);
+        //Debug.Log(hitRight.collider.name);
 
-        Debug.Log(hitRight.collider.name);
         // si hit collider
         if (hitLeft)
         {
@@ -83,7 +83,12 @@ public class IA_BAT : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (Vector3.Distance(new Vector3(transform.position.x, 0, 0), new Vector3(BatLandingPos.x, 0, 0)) <= 0.5f && Vector3.Distance(new Vector3(0, transform.position.y, 0), new Vector3(0, BatLandingPos.y, 0)) <= 0.5f && isChasing)
+        //Debug.Log("//");
+        //Debug.Log(Vector3.Distance(new Vector3(transform.position.x, 0, 0), new Vector3(BatLandingPos.x, 0, 0)));
+        //Debug.Log(Vector3.Distance(new Vector3(0, transform.position.y, 0), new Vector3(0, BatLandingPos.y, 0)));
+        //Debug.Log("//");
+
+        if (Vector3.Distance(new Vector3(transform.position.x, 0, 0), new Vector3(BatLandingPos.x, 0, 0)) <= 1.5f && Vector3.Distance(new Vector3(0, transform.position.y, 0), new Vector3(0, BatLandingPos.y, 0)) <= 1.5f && isChasing)
         {
             isChasing = false;
             isDone = true;
@@ -99,8 +104,8 @@ public class IA_BAT : MonoBehaviour
     {
         BatPos = transform.position;
         BatLandingPos = BatPos + new Vector3(Vector3.Distance(new Vector3(BatPos.x, 0, 0), new Vector3(playerTransform.position.x, 0, 0)), 0, 0) * 2;
-        PotentialPlayerPosExt = new Vector3(playerTransform.position.x + OffsetPotentialPlayerPos.x, playerTransform.position.y - OffsetPlayerHeight.y, 0);
-        PotentialPlayerPosInt = new Vector3(playerTransform.position.x - OffsetPotentialPlayerPos.x, playerTransform.position.y - OffsetPlayerHeight.y, 0);
+        PotentialPlayerPosExt = new Vector3(playerTransform.position.x + OffsetPotentialPlayerPos.x, playerTransform.position.y - OffsetPlayerHeight.y * (2.5f * Vector3.Normalize(new Vector2(0, Vector3.Distance(new Vector3(0, transform.position.y, 0), new Vector3(0, playerTransform.position.y, 0)))).y), 0); 
+        PotentialPlayerPosInt = new Vector3(playerTransform.position.x - OffsetPotentialPlayerPos.x, playerTransform.position.y - OffsetPlayerHeight.y * (2.5f * Vector3.Normalize(new Vector2(0, Vector3.Distance(new Vector3(0, transform.position.y, 0), new Vector3(0, playerTransform.position.y, 0)))).y), 0);
         isChasing = true;
     }
 
@@ -108,8 +113,8 @@ public class IA_BAT : MonoBehaviour
     {
         BatPos = transform.position;
         BatLandingPos = BatPos - new Vector3(Vector3.Distance(new Vector3(BatPos.x, 0, 0), new Vector3(playerTransform.position.x, 0, 0)), 0, 0) * 2;
-        PotentialPlayerPosExt = new Vector3(playerTransform.position.x - OffsetPotentialPlayerPos.x, playerTransform.position.y - OffsetPlayerHeight.y, 0);
-        PotentialPlayerPosInt = new Vector3(playerTransform.position.x + OffsetPotentialPlayerPos.x, playerTransform.position.y - OffsetPlayerHeight.y, 0);
+        PotentialPlayerPosExt = new Vector3(playerTransform.position.x - OffsetPotentialPlayerPos.x, playerTransform.position.y - OffsetPlayerHeight.y * (2.5f * Vector3.Normalize(new Vector2(0, Vector3.Distance(new Vector3(0, transform.position.y, 0), new Vector3(0, playerTransform.position.y, 0)))).y), 0);
+        PotentialPlayerPosInt = new Vector3(playerTransform.position.x + OffsetPotentialPlayerPos.x, playerTransform.position.y - OffsetPlayerHeight.y * (2.5f * Vector3.Normalize(new Vector2(0 ,Vector3.Distance(new Vector3(0, transform.position.y, 0), new Vector3(0, playerTransform.position.y, 0)))).y), 0);
         isChasing = true;
     }
 
@@ -131,10 +136,9 @@ public class IA_BAT : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+
         if (collision.gameObject.name == "Roof")
         {
-            Debug.Log("HIT " + collision.gameObject.name);
-
             if (isChasing)
             {
                 isChasing = false;
@@ -144,11 +148,21 @@ public class IA_BAT : MonoBehaviour
 
         }
 
-        if (collision.name == "Player")
-        {
-            Debug.Log("Player was hit");
-        }
 
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.name == "Roof")
+        {
+            if (isChasing)
+            {
+                isChasing = false;
+                isDone = true;
+                StartCoroutine(CD());
+            }
+
+        }
     }
 
     IEnumerator CD()

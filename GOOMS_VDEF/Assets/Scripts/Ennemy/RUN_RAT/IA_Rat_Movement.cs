@@ -53,7 +53,7 @@ public class IA_Rat_Movement : MonoBehaviour
 
         if (isChasing)
         {
-            movementSpeed = 800f;
+            movementSpeed = 925f;
         }
 
         else

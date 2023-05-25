@@ -19,7 +19,7 @@ public class PropsManager : MonoBehaviour
         {
             PropsSpawnPos[i] = PropsList[i].transform.position;
 
-            Debug.Log(PropsList[i] + " " +  PropsSpawnPos[i]);
+            //Debug.Log(PropsList[i] + " " +  PropsSpawnPos[i]);
         }
 
         PlayerHealth = GameObject.Find("Player").GetComponent<PlayerHealth>();
@@ -37,7 +37,7 @@ public class PropsManager : MonoBehaviour
                 collision.gameObject.transform.position = PropsSpawnPos[i];
             }
         }
-        Debug.Log(collision.gameObject.transform.name);
+        //Debug.Log(collision.gameObject.transform.name);
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -52,6 +52,6 @@ public class PropsManager : MonoBehaviour
                 collision.gameObject.transform.position = PropsSpawnPos[i];
             }
         }
-        Debug.Log(collision.gameObject.transform.name);
+        //Debug.Log(collision.gameObject.transform.name);
     }
 }

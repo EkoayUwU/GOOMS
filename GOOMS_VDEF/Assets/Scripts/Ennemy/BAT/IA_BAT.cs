@@ -23,10 +23,11 @@ public class IA_BAT : MonoBehaviour
     [SerializeField] Vector3 BatToPlayer;
     [SerializeField] Vector3 PlayerToPotPlayer;
 
-    [SerializeField] GameObject pointBatOrigin;
-    [SerializeField] GameObject pointBatLanding;
-    [SerializeField] GameObject pointPlayerExt;
-    [SerializeField] GameObject pointPlayerInt;
+    //Debug
+    //[SerializeField] GameObject pointBatOrigin;
+    //[SerializeField] GameObject pointBatLanding;
+    //[SerializeField] GameObject pointPlayerExt;
+    //[SerializeField] GameObject pointPlayerInt;
 
     private void Start()
     {
@@ -38,21 +39,24 @@ public class IA_BAT : MonoBehaviour
     {
         InterpolateTime = isDone ? 0 : (InterpolateTime + Time.deltaTime) % 1f;
 
-
-        pointBatOrigin.transform.position = BatPos;
-        pointBatLanding.transform.position = BatLandingPos;
-        pointPlayerExt.transform.position = PotentialPlayerPosExt;
-        pointPlayerInt.transform.position = PotentialPlayerPosInt;
+        //Debug
+        //pointBatOrigin.transform.position = BatPos;
+        //pointBatLanding.transform.position = BatLandingPos;
+        //pointPlayerExt.transform.position = PotentialPlayerPosExt;
+        //pointPlayerInt.transform.position = PotentialPlayerPosInt;
 
 
 
         //cast raycast down pour détecter 1er élément rencontré
-        RaycastHit2D hitLeft = Physics2D.Raycast(transform.position - new Vector3(0, 1f, 0), Vector2.down + Vector2.left, 15f);
-        RaycastHit2D hitRight = Physics2D.Raycast(transform.position - new Vector3(0, 1f, 0), Vector2.down + Vector2.right, 15f);
-        
-        Debug.DrawRay(transform.position - new Vector3(0, 1f, 0), (Vector2.down + Vector2.left) * 15f, Color.red);
-        Debug.DrawRay(transform.position - new Vector3(0, 1f, 0), (Vector2.down + Vector2.right) * 15f, Color.red);
+        RaycastHit2D hitLeft = Physics2D.Raycast(transform.position - new Vector3(0, 1.15f, 0), Vector2.down + Vector2.left, 15f);
+        RaycastHit2D hitRight = Physics2D.Raycast(transform.position - new Vector3(0, 1.15f, 0), Vector2.down + Vector2.right, 15f);
 
+        Debug.DrawRay(transform.position - new Vector3(0, 1.15f, 0), (Vector2.down + Vector2.left) * 15f, Color.red);
+        Debug.DrawRay(transform.position - new Vector3(0, 1.15f, 0), (Vector2.down + Vector2.right) * 15f, Color.red);
+
+        Debug.Log(hitLeft.collider.name);
+
+        Debug.Log(hitRight.collider.name);
         // si hit collider
         if (hitLeft)
         {
@@ -74,12 +78,12 @@ public class IA_BAT : MonoBehaviour
             }
         }
 
-        
+
     }
 
     private void FixedUpdate()
     {
-        if (Vector3.Distance(new Vector3(transform.position.x, 0, 0), new Vector3(BatLandingPos.x, 0, 0)) <= 0.5f && Vector3.Distance(new Vector3(0, transform.position.y, 0), new Vector3(0, BatLandingPos.y, 0)) <=0.5f && isChasing)
+        if (Vector3.Distance(new Vector3(transform.position.x, 0, 0), new Vector3(BatLandingPos.x, 0, 0)) <= 0.5f && Vector3.Distance(new Vector3(0, transform.position.y, 0), new Vector3(0, BatLandingPos.y, 0)) <= 0.5f && isChasing)
         {
             isChasing = false;
             isDone = true;
@@ -103,7 +107,7 @@ public class IA_BAT : MonoBehaviour
     void InitChaseLeft(Transform playerTransform)
     {
         BatPos = transform.position;
-        BatLandingPos = BatPos - new Vector3(Vector3.Distance(new Vector3(BatPos.x, 0, 0), new Vector3(playerTransform.position.x, 0, 0)), 0 ,0 ) * 2;
+        BatLandingPos = BatPos - new Vector3(Vector3.Distance(new Vector3(BatPos.x, 0, 0), new Vector3(playerTransform.position.x, 0, 0)), 0, 0) * 2;
         PotentialPlayerPosExt = new Vector3(playerTransform.position.x - OffsetPotentialPlayerPos.x, playerTransform.position.y - OffsetPlayerHeight.y, 0);
         PotentialPlayerPosInt = new Vector3(playerTransform.position.x + OffsetPotentialPlayerPos.x, playerTransform.position.y - OffsetPlayerHeight.y, 0);
         isChasing = true;
@@ -126,7 +130,7 @@ public class IA_BAT : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
-    {     
+    {
         if (collision.gameObject.name == "Roof")
         {
             Debug.Log("HIT " + collision.gameObject.name);
@@ -137,14 +141,14 @@ public class IA_BAT : MonoBehaviour
                 isDone = true;
                 StartCoroutine(CD());
             }
-                        
+
         }
 
         if (collision.name == "Player")
         {
             Debug.Log("Player was hit");
         }
-        
+
     }
 
     IEnumerator CD()

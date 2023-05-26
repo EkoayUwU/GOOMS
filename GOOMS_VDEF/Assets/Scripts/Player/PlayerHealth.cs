@@ -32,22 +32,21 @@ public class PlayerHealth : MonoBehaviour
         {
             // désactiver le mouvement, changer la couleur du SpriteRenderer, désactiver le CapsuleCollider2D et changer le layer du gameObject
             //rb.velocity = new Vector2(5, -15);
+
             rb.bodyType = RigidbodyType2D.Static;
             movementScript.enabled = false;
             jumpScript.enabled = false;
+            GameObject.Find("Cursor").GetComponent<DragAndDrop>().enabled = false;
+            GameObject.Find("Cursor").GetComponent<CursorPosition>().enabled = false;
+            
             sr.color = new Color(255f, 0f, 0f);
             boxCollider.enabled = false;
             capCollider.enabled = false;
             gameObject.layer = 7;
 
-            if (Input.GetKeyDown(KeyCode.Return)) // si la touche Entrée est enfoncée
+            if (Input.GetKeyDown(KeyCode.Return) || Input.GetButtonDown("Jump")) // si la touche Entrée est enfoncée
             {
-                // réinitialiser la santé, réactiver le mouvement, changer la couleur du SpriteRenderer, réactiver le CapsuleCollider2D et changer le layer du gameObject
-                //healthPoint = 1;
-                //movementScript.enabled = true;
-                //sr.color = new Color(255f, 255f, 255f);
-                //capCollider.enabled = true;
-                //gameObject.layer = 8;
+                GetComponent<spawnManager>().ReloadSceneOnDeath();
             }
 
             /* Lancement Animation + Ecran Mort

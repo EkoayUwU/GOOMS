@@ -12,15 +12,6 @@ public class spawnManager : MonoBehaviour
         transform.position = spawnPosition; 
     }
 
-    private void Update()
-    {
-        string actualScene = "" + SceneManager.GetActiveScene().name;
-
-        if (Input.GetKeyDown(KeyCode.Return))
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        }
-    }
     public void SetSpawnPosition(Vector2 Position)
     {
         spawnPosition = Position;
@@ -29,5 +20,10 @@ public class spawnManager : MonoBehaviour
     public Vector3 GetSpawnPosition()
     {
         return spawnPosition;
+    }
+
+    public void ReloadSceneOnDeath()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

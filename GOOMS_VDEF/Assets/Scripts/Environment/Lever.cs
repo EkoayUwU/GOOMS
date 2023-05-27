@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class Lever : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class Lever : MonoBehaviour
     [SerializeField] GameObject Waterfall;
     [SerializeField] GameObject LightRef;
     [SerializeField] Sprite green_light;
+    [SerializeField] Light2D ValveLight;
+
     bool isOpen = false;
     private bool isWaiting = false;
     private bool isWaiting2 = false;
@@ -57,5 +60,6 @@ public class Lever : MonoBehaviour
         isRotating = false;
         isWaiting2 = true;
         LightRef.GetComponent<SpriteRenderer>().sprite = green_light;
+        ValveLight.color = Color.green;
     }
 }

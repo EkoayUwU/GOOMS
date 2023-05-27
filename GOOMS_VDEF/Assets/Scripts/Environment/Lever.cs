@@ -13,12 +13,14 @@ public class Lever : MonoBehaviour
     private bool isWaiting = false;
     private bool isWaiting2 = false;
 
+    bool isRotating = false;
+
     void Update()
     {
 
         if (isWaiting && isWaiting2)
         {
-            isOpen = !isOpen;
+            isOpen = true;
             isWaiting = false;
             isWaiting2 = false;
 
@@ -32,7 +34,7 @@ public class Lever : MonoBehaviour
 
         if (cursorRef.transform.position.x < transform.position.x + 1f && cursorRef.transform.position.x > transform.position.x - 1f && cursorRef.transform.position.y < transform.position.y + 1f && cursorRef.transform.position.y > transform.position.y - 1f)
         {
-            if (Input.GetMouseButton(0) || Input.GetAxis("RT") > 0)
+            if ((Input.GetMouseButton(0) || Input.GetAxis("RT") > 0) && !isOpen)
             {
                 if (isWaiting == false)
                 {
@@ -41,14 +43,18 @@ public class Lever : MonoBehaviour
                 }
             }
         }
-        
 
+        if (isRotating) transform.Rotate(0, 0, 7.5f);
+
+        
     }
 
 
     IEnumerator TimerVavle()
     {
-        yield return new WaitForSeconds(0.75f);
+        isRotating = true;
+        yield return new WaitForSeconds(0.77f);
+        isRotating = false;
         isWaiting2 = true;
         LightRef.GetComponent<SpriteRenderer>().sprite = green_light;
     }

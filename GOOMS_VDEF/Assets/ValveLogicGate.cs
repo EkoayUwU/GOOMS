@@ -1,42 +1,35 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting.Antlr3.Runtime;
 using UnityEngine;
-using UnityEngine.Rendering.Universal;
 
-public class Lever : MonoBehaviour
+public class ValveLogicGate : MonoBehaviour
 {
     [SerializeField] GameObject cursorRef;
+    [SerializeField] LogicGate LogicGateRef;
 
-    [SerializeField] GameObject Waterfall;
-    [SerializeField] GameObject LightRef;
-    [SerializeField] Sprite green_light;
-    [SerializeField] Light2D ValveLight;
+    bool isWaiting;
+    bool isWaiting2;
+    bool isRotating;
 
-    bool isOpen = false;
-    private bool isWaiting = false;
-    private bool isWaiting2 = false;
+    void Start()
+    {
+        
+    }
 
-    bool isRotating = false;
-
+    // Update is called once per frame
     void Update()
     {
-
         if (isWaiting && isWaiting2)
         {
-            isOpen = true;
+            LogicGateRef.Set(gameObject.name);
             isWaiting = false;
             isWaiting2 = false;
         }
 
-        if (isOpen)
-        {
-            Waterfall.GetComponent<BoxCollider2D>().enabled = false;
-            Waterfall.GetComponent<SpriteRenderer>().enabled = false;
-        }
-
         if (cursorRef.transform.position.x < transform.position.x + 1f && cursorRef.transform.position.x > transform.position.x - 1f && cursorRef.transform.position.y < transform.position.y + 1f && cursorRef.transform.position.y > transform.position.y - 1f)
         {
-            if ((Input.GetMouseButton(0) || Input.GetAxis("RT") > 0) && !isOpen)
+            if ((Input.GetMouseButton(0) || Input.GetAxis("RT") > 0))
             {
                 if (isWaiting == false)
                 {
@@ -48,7 +41,7 @@ public class Lever : MonoBehaviour
 
         if (isRotating) transform.Rotate(0, 0, 7.5f);
 
-        
+
     }
 
 
@@ -58,7 +51,8 @@ public class Lever : MonoBehaviour
         yield return new WaitForSeconds(0.77f);
         isRotating = false;
         isWaiting2 = true;
-        LightRef.GetComponent<SpriteRenderer>().sprite = green_light;
-        ValveLight.color = Color.green;
+
+        //LightRef.GetComponent<SpriteRenderer>().sprite = green_light;
+        //ValveLight.color = Color.green;
     }
 }

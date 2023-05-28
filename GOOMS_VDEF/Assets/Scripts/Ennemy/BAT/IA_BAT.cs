@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using TreeEditor;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -118,6 +117,7 @@ public class IA_BAT : MonoBehaviour
         isChasing = true;
     }
 
+
     Vector3 QuadraticLerp(Vector3 a, Vector3 b, Vector3 c, float t)
     {
         Vector3 ab = Vector3.Lerp(a, b, t);
@@ -134,6 +134,8 @@ public class IA_BAT : MonoBehaviour
         return Vector3.Lerp(ab_bc, bc_cd, InterpolateTime);
     }
 
+
+    //Stop la chauve-souris si contacte avec plafond
     private void OnTriggerEnter2D(Collider2D collision)
     {
 

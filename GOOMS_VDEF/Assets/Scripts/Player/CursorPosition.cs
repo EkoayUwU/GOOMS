@@ -23,6 +23,7 @@ public class CursorPosition : MonoBehaviour
 
         float tailleCam = cameraRef.GetComponent<Camera>().orthographicSize;
 
+        //Encadrement Curseur
         if (transform.position.x < cameraRef.transform.position.x - tailleCam * 1.75) transform.position = new Vector3(cameraRef.transform.position.x - tailleCam * 1.75f, transform.position.y, transform.position.z);
         if (transform.position.x > cameraRef.transform.position.x + tailleCam * 1.75) transform.position = new Vector3(cameraRef.transform.position.x + tailleCam * 1.75f, transform.position.y, transform.position.z);
         if (transform.position.y < cameraRef.transform.position.y - tailleCam) transform.position = new Vector3(transform.position.x, cameraRef.transform.position.y - tailleCam, transform.position.z);
@@ -39,7 +40,7 @@ public class CursorPosition : MonoBehaviour
 
             if (PropsRef != null && Input.GetAxis("RT") == 0)
             {
-                transform.position = PropsRef.transform.position;
+                transform.position = new Vector3(PropsRef.transform.position.x, PropsRef.transform.position.y, transform.position.z);
             }
         }     
         
@@ -55,7 +56,7 @@ public class CursorPosition : MonoBehaviour
 
             if (PropsRef != null && !Input.GetMouseButtonDown(0))
             {
-                transform.position = PropsRef.transform.position;
+                transform.position = new Vector3(PropsRef.transform.position.x, PropsRef.transform.position.y, transform.position.z);
             }
         }
         

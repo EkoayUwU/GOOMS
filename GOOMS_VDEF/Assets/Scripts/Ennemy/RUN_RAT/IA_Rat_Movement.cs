@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -31,7 +30,7 @@ public class IA_Rat_Movement : MonoBehaviour
 
     void Update()
     {
-
+        //Check si joueur en vue du rat
         isChasing = ((CheckGauche() || CheckDroite()) && zoneRef.Get()) ? true : false;
 
 
@@ -76,11 +75,13 @@ public class IA_Rat_Movement : MonoBehaviour
         return (((playerRef.transform.position.x - transform.position.x > 0) && transform.localScale.x == 1) && !isOnPlatform()) ? true : false;
     }
 
+    //Retourne le rat si checkpoint atteint
     private void SwapSens()
     {
         transform.localScale = target.position.x > transform.position.x ? new Vector3(1f, 1f, 1f) : new Vector3(-1f, 1f, 1f);
     }
 
+    //Check si le joueur se trouve sur une platforme
     bool isOnPlatform()
     {
         bool temp = false;

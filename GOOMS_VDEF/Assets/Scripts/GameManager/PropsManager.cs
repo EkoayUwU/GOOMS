@@ -8,8 +8,6 @@ public class PropsManager : MonoBehaviour
     [SerializeField] GameObject[] PropsList;
     Vector3[] PropsSpawnPos;
 
-    PlayerHealth PlayerHealth;
-
 
     private void Start()
     {
@@ -21,13 +19,10 @@ public class PropsManager : MonoBehaviour
 
             //Debug.Log(PropsList[i] + " " +  PropsSpawnPos[i]);
         }
-
-        PlayerHealth = GameObject.Find("Player").GetComponent<PlayerHealth>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "Player") PlayerHealth.Damage(100);
 
         for (int i = 0; i < PropsList.Length; i++)
         {
@@ -42,8 +37,6 @@ public class PropsManager : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "Player") PlayerHealth.Damage(100);
-
         for (int i = 0; i < PropsList.Length; i++)
         {
             if (collision.gameObject.name == PropsList[i].name)

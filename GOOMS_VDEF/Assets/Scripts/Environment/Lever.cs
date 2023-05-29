@@ -30,8 +30,7 @@ public class Lever : MonoBehaviour
 
         if (isOpen)
         {
-            Waterfall.GetComponent<BoxCollider2D>().enabled = false;
-            Waterfall.GetComponent<SpriteRenderer>().enabled = false;
+            Waterfall.SetActive(false);
         }
 
         if (cursorRef.transform.position.x < transform.position.x + 1f && cursorRef.transform.position.x > transform.position.x - 1f && cursorRef.transform.position.y < transform.position.y + 1f && cursorRef.transform.position.y > transform.position.y - 1f)

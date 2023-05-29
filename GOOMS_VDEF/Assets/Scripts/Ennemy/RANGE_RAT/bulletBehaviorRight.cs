@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class bulletBehavior : MonoBehaviour
+public class bulletBehaviorRight : MonoBehaviour
 {
     GameObject playerRef;
     [SerializeField] Transform rangeRef;
@@ -24,8 +24,8 @@ public class bulletBehavior : MonoBehaviour
     private void FixedUpdate()
     {
 
-        Vector2 target_velocity = new Vector2( -1 * travelSpeed * Time.deltaTime * 1, 0);
-        rb.velocity = Vector2.SmoothDamp(rb.velocity, target_velocity,ref ref_velocity, 0.5f);
+        Vector2 target_velocity = new Vector2( 1 * travelSpeed * Time.deltaTime * 1, 0);
+        rb.velocity = Vector2.SmoothDamp(rb.velocity, target_velocity, ref ref_velocity, 0.5f);
 
 
     }
@@ -38,9 +38,9 @@ public class bulletBehavior : MonoBehaviour
             collision.gameObject.GetComponent<PlayerHealth>().Damage(1);
             Destroy(gameObject);
         }
-        if(collision.name != "Cursor" && collision.name != "CM_Boundaries")
+        if (collision.name != "Cursor" && collision.name != "CM_Boundaries")
         {
-            Destroy(gameObject);    
+            Destroy(gameObject);
         }
     }
 }

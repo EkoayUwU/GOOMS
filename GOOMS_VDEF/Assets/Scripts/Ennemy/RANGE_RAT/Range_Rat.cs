@@ -12,6 +12,7 @@ public class Range_Rat : MonoBehaviour
     bool isWaiting = false;
 
     float range;
+    [SerializeField] bool isFacingRight;
 
 
     // Update is called once per frame

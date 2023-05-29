@@ -22,7 +22,7 @@ public class StartBossManager : MonoBehaviour
         {
             if ( CameraTravelingRefPoint.transform.position.y < 65.0f)
             {
-                CameraTravelingRefPoint.transform.position += new Vector3(0, Time.deltaTime, 0) * 15f;
+                CameraTravelingRefPoint.transform.position += new Vector3(0, Time.deltaTime, 0) * 25f;
             }
             else isTravelling = false;        
         }
@@ -44,8 +44,10 @@ public class StartBossManager : MonoBehaviour
 
     IEnumerator Timer1()
     {
-        yield return new WaitForSeconds(2.75f);
+        yield return new WaitForSeconds(2.5f);
         Wait1 = true;
-        GameObject.Find("NoY_To_Travelling").SetActive(false);
+
+        if(GameObject.Find("NoY_To_Travelling") != null) Destroy(GameObject.Find("NoY_To_Travelling"));
+
     }
 }

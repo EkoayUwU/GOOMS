@@ -48,16 +48,6 @@ public class PlayerHealth : MonoBehaviour
             {
                 GetComponent<spawnManager>().ReloadSceneOnDeath();
             }
-
-            /* Lancement Animation + Ecran Mort
-               Juuuuuuuuste ici
-               Là
-            */
-        }
-
-        if (Input.GetKeyDown(KeyCode.H)) // si la touche H est enfoncée
-        {
-            Damage(1); // infliger des dégâts au joueur
         }
     }
 

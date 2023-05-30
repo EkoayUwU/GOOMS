@@ -18,11 +18,6 @@ public class Player_Movement : MonoBehaviour
     //Variable Camera
     public bool isFacingRight = true;
 
-    //Particule Course
-    [SerializeField] ParticleSystem RunDust;
-    bool SpawnParticule = false;
-
-
 
     void Start()
     {
@@ -39,6 +34,7 @@ public class Player_Movement : MonoBehaviour
 
         anim.SetFloat("Speed", Mathf.Abs(horizontalValue));
 
+
     }
 
     private void FixedUpdate()
@@ -52,7 +48,6 @@ public class Player_Movement : MonoBehaviour
 
     void Turn()
     {
-        CreateDust();
         if(isFacingRight)
         {
             Vector3 rotator = new Vector3(transform.rotation.x, 180f, transform.rotation.y);

@@ -23,12 +23,15 @@ public class DragAndDrop : MonoBehaviour
                 rbDP = draggedProps.GetComponent<Rigidbody2D>();
                 rbDP.gravityScale = 0;
                 rbDP.angularDrag = 2.5f;
+                draggedProps.GetComponent<SpriteRenderer>().color = new Color32(255, 255, 255, 125);
+
 
                 rbDP.constraints = RigidbodyConstraints2D.None;
                 rbDP.constraints = RigidbodyConstraints2D.FreezePosition;
             }
             if (Input.GetAxis("RT") <= 0 && draggedProps != null)
             {
+                draggedProps.GetComponent<SpriteRenderer>().color = new Color32(255, 255, 255, 255);
                 draggedProps.layer = 8;
                 rbDP.gravityScale = 1.5f;
                 rbDP.constraints = RigidbodyConstraints2D.FreezeAll;
@@ -54,12 +57,14 @@ public class DragAndDrop : MonoBehaviour
                 rbDP = draggedProps.GetComponent<Rigidbody2D>();
                 rbDP.gravityScale = 0;
                 rbDP.angularDrag = 2.5f;
+                draggedProps.GetComponent<SpriteRenderer>().color = new Color32(255, 255, 255, 125);
 
                 rbDP.constraints = RigidbodyConstraints2D.None;
                 rbDP.constraints = RigidbodyConstraints2D.FreezePosition;
             }
             if (Input.GetMouseButtonUp(0) && draggedProps != null)
             {
+                draggedProps.GetComponent<SpriteRenderer>().color = new Color32(255, 255, 255, 255);
                 draggedProps.layer = 8;
                 rbDP.gravityScale = 1.5f;
                 rbDP.constraints = RigidbodyConstraints2D.FreezeAll;

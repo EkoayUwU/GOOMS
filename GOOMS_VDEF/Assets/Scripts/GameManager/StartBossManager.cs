@@ -44,7 +44,7 @@ public class StartBossManager : MonoBehaviour
 
     IEnumerator Timer1()
     {
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(1.75f);
         Wait1 = true;
 
         if(GameObject.Find("NoY_To_Travelling") != null) Destroy(GameObject.Find("NoY_To_Travelling"));

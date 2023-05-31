@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class CursorPosition : MonoBehaviour
 {
     [SerializeField] GameObject cameraRef;
-    [SerializeField] float camSpeed;
+    [SerializeField] OptionsMenu OptionsRef;
 
     [SerializeField] GameObject playerRef;
     float OffsetRadius;
@@ -32,7 +32,7 @@ public class CursorPosition : MonoBehaviour
         //Manette
         if (Gamepad.current != null)
         {
-            transform.position = new Vector3(transform.position.x + Input.GetAxis("RightHorizontal") * camSpeed, transform.position.y + Input.GetAxis("RightVertical") * camSpeed, transform.position.z);
+            transform.position = new Vector3(transform.position.x + Input.GetAxis("RightHorizontal") * OptionsRef.cursorSpeed, transform.position.y + Input.GetAxis("RightVertical") * OptionsRef.cursorSpeed, transform.position.z);
 
             //if (grabReach.GetOnReach()) transform.position = grabReach.GetProps().transform.position;
 

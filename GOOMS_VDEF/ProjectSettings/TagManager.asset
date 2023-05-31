@@ -8,6 +8,7 @@ TagManager:
   - Ennemy
   - Floor
   - staticProps
+  - LimiteRef
   layers:
   - Default
   - TransparentFX

@@ -10,7 +10,13 @@ public class DragAndDrop : MonoBehaviour
     [SerializeField] GameObject refToDraggedProps;
     [SerializeField] GameObject draggedProps;
     Rigidbody2D rbDP;
-    
+
+    GameObject[] LimiteRefList;
+    private void Start()
+    {
+        LimiteRefList = GameObject.FindGameObjectsWithTag("LimiteRef");
+    }
+
 
     void Update()
     {
@@ -28,6 +34,15 @@ public class DragAndDrop : MonoBehaviour
 
                 rbDP.constraints = RigidbodyConstraints2D.None;
                 rbDP.constraints = RigidbodyConstraints2D.FreezePosition;
+
+                if(LimiteRefList != null)
+                {
+                    foreach (GameObject Limite in LimiteRefList)
+                    {
+                        Limite.SetActive(true);
+                    }
+                }
+                
             }
             if (Input.GetAxis("RT") <= 0 && draggedProps != null)
             {
@@ -37,6 +52,13 @@ public class DragAndDrop : MonoBehaviour
                 rbDP.constraints = RigidbodyConstraints2D.FreezeAll;
                 draggedProps = null;
 
+                if (LimiteRefList != null)
+                {
+                    foreach (GameObject Limite in LimiteRefList)
+                    {
+                        Limite.SetActive(false);
+                    }
+                }
             }
 
             //if (Input.GetAxis("LT") > 0 && draggedProps)
@@ -83,6 +105,8 @@ public class DragAndDrop : MonoBehaviour
         
 
         if (forcedDrop) Invoke("Timer", 1.0f);
+
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

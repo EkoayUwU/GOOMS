@@ -23,7 +23,7 @@ public class WaterBehavior : MonoBehaviour
     {
         if (isAscending && transform.position.y < 2.2f)
         {
-            transform.position += new Vector3(0, Time.deltaTime * 0.5f, 0);
+            transform.position += new Vector3(0, Time.deltaTime * 0.75f, 0);
         } 
     }
 

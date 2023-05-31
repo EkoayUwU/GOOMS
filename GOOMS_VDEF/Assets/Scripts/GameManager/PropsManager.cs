@@ -29,7 +29,9 @@ public class PropsManager : MonoBehaviour
             if (collision.gameObject.name == PropsList[i].name)
             {
                 collision.gameObject.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+                collision.gameObject.GetComponent<BoxCollider2D>().enabled = false; 
                 collision.gameObject.transform.position = PropsSpawnPos[i];
+                collision.gameObject.GetComponent<BoxCollider2D>().enabled = true;
             }
         }
         //Debug.Log(collision.gameObject.transform.name);
@@ -42,7 +44,9 @@ public class PropsManager : MonoBehaviour
             if (collision.gameObject.name == PropsList[i].name)
             {
                 collision.gameObject.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+                collision.gameObject.GetComponent<BoxCollider2D>().enabled = false;
                 collision.gameObject.transform.position = PropsSpawnPos[i];
+                collision.gameObject.GetComponent<BoxCollider2D>().enabled = true;
             }
         }
         //Debug.Log(collision.gameObject.transform.name);

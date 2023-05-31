@@ -50,4 +50,9 @@ public class StartBossManager : MonoBehaviour
         if(GameObject.Find("NoY_To_Travelling") != null) Destroy(GameObject.Find("NoY_To_Travelling"));
 
     }
+
+    void ScndEtape()
+    {
+
+    }
 }

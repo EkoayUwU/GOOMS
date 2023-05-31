@@ -6,8 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
-    [SerializeField] Slider Sensitivity;
-
 
     private void Start()
     {

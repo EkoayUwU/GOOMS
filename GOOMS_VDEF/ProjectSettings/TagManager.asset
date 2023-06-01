@@ -49,6 +49,9 @@ TagManager:
   - name: Pipe
     uniqueID: 2036193515
     locked: 0
+  - name: Parralax1
+    uniqueID: 938966693
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
@@ -63,4 +66,7 @@ TagManager:
     locked: 0
   - name: Cursor
     uniqueID: 2212672513
+    locked: 0
+  - name: Front
+    uniqueID: 1142074577
     locked: 0

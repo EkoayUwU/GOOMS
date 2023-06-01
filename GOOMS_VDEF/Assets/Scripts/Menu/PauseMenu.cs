@@ -6,49 +6,7 @@ using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
-    //[SerializeField] GameObject PauseMenuRef;
-    //[SerializeField] GameObject FondRef;
-
-    //bool isOpen;
-    //bool isTimed;
-
-    //void Start()
-    //{
-    //    isOpen = false;
-    //    isTimed = false;
-    //}
-
-    //private void Update()
-    //{
-    //    if (!isTimed && (Input.GetKeyDown(KeyCode.Escape) || Input.GetButton("Cancel")) )
-    //    {
-    //        OpenMenu();
-    //    }
-
-    //}
-
-    //void OpenMenu()
-    //{
-    //    isOpen = !isOpen;
-
-    //    SetMenu(isOpen);
-    //}
-
-    //void SetMenu(bool isSet)
-    //{
-    //    PauseMenuRef.SetActive(isSet);
-    //    FondRef.SetActive(isSet);
-
-    //    StartCoroutine(Timer());
-    //}
-
-    //IEnumerator Timer()
-    //{
-    //    isTimed = true;
-    //    yield return new WaitForSeconds(0.25f);
-    //    isTimed = false;
-    //}
-
+    
 
     bool isGamePaused;
 

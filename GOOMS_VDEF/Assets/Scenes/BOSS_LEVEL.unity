@@ -11281,6 +11281,14 @@ PrefabInstance:
       propertyPath: platformRef.Array.data[1]
       value: 
       objectReference: {fileID: 57516430}
+    - target: {fileID: 1175866249181043825, guid: 51b5fbc55cb22a74b948a37ea291ecb5, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 3.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1175866249181043825, guid: 51b5fbc55cb22a74b948a37ea291ecb5, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 3.23
+      objectReference: {fileID: 0}
     - target: {fileID: 1175866249181043827, guid: 51b5fbc55cb22a74b948a37ea291ecb5, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -29896,6 +29904,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1308357987}
   - component: {fileID: 1308357986}
+  - component: {fileID: 1308357988}
   m_Layer: 0
   m_Name: Boss_MOUSE
   m_TagString: Untagged
@@ -29944,7 +29953,7 @@ SpriteRenderer:
   m_SortingLayerID: -1187420393
   m_SortingLayer: 2
   m_SortingOrder: 39
-  m_Sprite: {fileID: 21300000, guid: 884c2de8c366bea47bf99d472652c563, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ac8109ff6df1767469d9ca836fb3808a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -29963,13 +29972,33 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1308357985}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 135.93309, y: 34.93, z: -1.1817825}
-  m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
+  m_LocalPosition: {x: 137.01, y: 34.866, z: -1.1817825}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 136132004}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1308357988
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308357985}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 68afd04b08c87994da126c06f3c084bc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1313886800
 GameObject:
   m_ObjectHideFlags: 0
@@ -40073,7 +40102,7 @@ GameObject:
   - component: {fileID: 1812850446}
   - component: {fileID: 1812850445}
   m_Layer: 0
-  m_Name: ColliderEnBoss
+  m_Name: ColliderEndBoss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -41,7 +41,7 @@ public class EndBossManager : MonoBehaviour
     }
     void StopAnimBoss()
     {
-        //Stop AnimBoss
+        bossRef.GetComponent<Animator>().enabled = false;
         
         Invoke(nameof(FlipBoss), 1.25f);
     }
@@ -61,6 +61,7 @@ public class EndBossManager : MonoBehaviour
     void RunBoss()
     {
         bossRef.GetComponent<SpriteRenderer>().flipX = false;
+        bossRef.GetComponent<Animator>().enabled = true;
         isRunning = true;   
     }
 

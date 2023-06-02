@@ -32,7 +32,7 @@ public class CursorPosition : MonoBehaviour
         //Manette
         if (Gamepad.current != null)
         {
-            transform.position = new Vector3(transform.position.x + Input.GetAxis("RightHorizontal") * cursorSpeed, transform.position.y + Input.GetAxis("RightVertical") * cursorSpeed, transform.position.z);
+            transform.position = new Vector3(transform.position.x + Input.GetAxis("RightHorizontal") * cursorSpeed * Time.deltaTime * 55, transform.position.y + Input.GetAxis("RightVertical") * cursorSpeed * Time.deltaTime * 55, transform.position.z);
 
             //if (grabReach.GetOnReach()) transform.position = grabReach.GetProps().transform.position;
 

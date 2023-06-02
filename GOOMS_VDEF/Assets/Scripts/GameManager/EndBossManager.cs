@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EndBossManager : MonoBehaviour
 {
@@ -62,7 +63,14 @@ public class EndBossManager : MonoBehaviour
     {
         bossRef.GetComponent<SpriteRenderer>().flipX = false;
         bossRef.GetComponent<Animator>().enabled = true;
-        isRunning = true;   
+        isRunning = true;
+
+        Invoke("Credits", 4f);
+    }
+
+    void Credits()
+    {
+        SceneManager.LoadScene("CREDITS");
     }
 
 

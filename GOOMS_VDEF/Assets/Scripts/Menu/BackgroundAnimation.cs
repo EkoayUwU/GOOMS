@@ -35,7 +35,7 @@ public class BackgroundAnimation : MonoBehaviour
     {
         if (boolStep1)
         {
-            CharaRef.transform.position = Vector3.MoveTowards(CharaRef.transform.position, WaypointEndLeft.position, 0.004f);
+            CharaRef.transform.position = Vector3.MoveTowards(CharaRef.transform.position, WaypointEndLeft.position, 0.05f);
 
             if(CharaRef.transform.position.x == WaypointEndLeft.position.x)
             {
@@ -47,7 +47,7 @@ public class BackgroundAnimation : MonoBehaviour
 
         if (boolStep2)
         {
-            CharaRef.transform.position = Vector3.MoveTowards(CharaRef.transform.position, WaypointSpawnLeft.position, 0.004f);
+            CharaRef.transform.position = Vector3.MoveTowards(CharaRef.transform.position, WaypointSpawnLeft.position, 0.05f);
 
             if (CharaRef.transform.position.x == WaypointSpawnLeft.position.x)
             {
@@ -58,7 +58,7 @@ public class BackgroundAnimation : MonoBehaviour
 
         if (boolStep3)
         {
-            CharaRef.transform.position = Vector3.MoveTowards(CharaRef.transform.position, WaypointEndRight.position, 0.004f);
+            CharaRef.transform.position = Vector3.MoveTowards(CharaRef.transform.position, WaypointEndRight.position, 0.05f);
 
             if (CharaRef.transform.position.x == WaypointEndRight.position.x)
             {
@@ -70,7 +70,7 @@ public class BackgroundAnimation : MonoBehaviour
 
         if (boolStep4)
         {
-            CharaRef.transform.position = Vector3.MoveTowards(CharaRef.transform.position, WaypointSpawnRight.position, 0.004f);
+            CharaRef.transform.position = Vector3.MoveTowards(CharaRef.transform.position, WaypointSpawnRight.position, 0.05f);
 
             if (CharaRef.transform.position.x == WaypointSpawnRight.position.x)
             {

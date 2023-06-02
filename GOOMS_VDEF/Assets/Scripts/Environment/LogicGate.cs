@@ -30,7 +30,7 @@ public class LogicGate : MonoBehaviour
         //Set la couleur des lights
         for (int i = 0; i < logicGates.Length; i++)
         {
-            GameObjectLightList[i].GetComponent<SpriteRenderer>().sprite = (LightRefList[i].color = logicGates[i] ? Color.green : Color.yellow) == Color.green ? SpriteList[1] : SpriteList[0];
+            GameObjectLightList[i].GetComponent<SpriteRenderer>().sprite = (LightRefList[i].color = logicGates[i] ? Color.green : Color.red) == Color.green ? SpriteList[1] : SpriteList[0];
         }
 
         doorRef.SetActive(!isOpen);

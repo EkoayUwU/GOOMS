@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class CursorPosition : MonoBehaviour
 {
     [SerializeField] GameObject cameraRef;
-    float cursorSpeed;
+    static float cursorSpeed;
     
     [SerializeField] GameObject playerRef;
     float OffsetRadius;
@@ -62,7 +62,7 @@ public class CursorPosition : MonoBehaviour
         
         PropsList = GameObject.FindGameObjectsWithTag("staticProps");
 
-        
+        print(cursorSpeed);
     }
 
     GameObject IsInRange()
@@ -103,5 +103,7 @@ public class CursorPosition : MonoBehaviour
     public void SetCursorSpeed(float newValue)
     {
         cursorSpeed = newValue;
+
+        print("fnct " +cursorSpeed);
     }
 }

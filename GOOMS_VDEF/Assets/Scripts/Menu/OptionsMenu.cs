@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class OptionsMenu : MonoBehaviour
 {
-    static float cursorSpeed = 0.3f;
+    static float cursorSpeedOptions = 0.3f;
 
     private void Start()
     {
@@ -12,15 +12,15 @@ public class OptionsMenu : MonoBehaviour
 
         if ( GameObject.Find("Cursor") != null)
         {
-            GameObject.Find("Cursor").GetComponent<CursorPosition>().SetCursorSpeed(cursorSpeed);
+            GameObject.Find("Cursor").GetComponent<CursorPosition>().SetCursorSpeed(cursorSpeedOptions);
         }
     }
 
     public void SetSentivity(float sensitivityValue)
     {
-        cursorSpeed = sensitivityValue / 10;
+        cursorSpeedOptions = sensitivityValue / 10;
 
-        if (GameObject.Find("Cursor") != null) GameObject.Find("Cursor").GetComponent<CursorPosition>().SetCursorSpeed(cursorSpeed);
+        if (GameObject.Find("Cursor") != null) GameObject.Find("Cursor").GetComponent<CursorPosition>().SetCursorSpeed(cursorSpeedOptions);
 
     }
 
